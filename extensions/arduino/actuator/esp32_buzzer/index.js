@@ -7,7 +7,7 @@ const esp32buzzer = formatMessage => ({
     extensionId: 'esp32buzzer',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp8266', 'arduinoEsp32S3'],
     author: 'keyes',
     iconURL: `asset/p_buzzer.jpg`,
     description: formatMessage({

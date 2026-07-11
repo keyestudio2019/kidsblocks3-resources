@@ -91,7 +91,12 @@ function addToolbox () {
     
 </category>
 
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 
 <category name="%{BKY_WIFI_CATEGORY}" id="WIFI_CATEGORY" colour="#AE00AE" secondaryColour="#930093">
     <block type="wifi_init" id="wifi_init">

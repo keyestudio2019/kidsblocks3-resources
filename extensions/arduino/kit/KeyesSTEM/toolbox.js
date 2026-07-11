@@ -90,6 +90,12 @@ function addToolbox () {
     </block>
     
 </category>
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="TFT"  id="Arduino_TFT_CATEGORY" colour="#008000" secondaryColour="#008000"> 
   <block type="Arduino_TFT_begin2">
     <field name="RST">3</field>

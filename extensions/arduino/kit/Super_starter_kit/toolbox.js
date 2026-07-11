@@ -87,7 +87,12 @@ function addToolbox () {
     </block>
     
 </category>
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="%{BKY_RGB_CATEGORY}" id="RGB_CATEGORY" colour="#ff0000" secondaryColour="#ff0000">
     <block type="rgb_digital" id="rgb_digital">
         <field name="PIN1">3</field>

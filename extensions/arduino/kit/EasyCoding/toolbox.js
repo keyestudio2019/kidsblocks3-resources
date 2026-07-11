@@ -90,7 +90,12 @@ return `
     </block>
     
 </category>
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="%{BKY_BUTTON_CATEGORY}" id="BUTTON_CATEGORY" colour="#87cefa" secondaryColour="#3373CC">
     <block type="Button_readState" id="Button_readState">
         <field name="pin">0</field>

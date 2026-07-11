@@ -31,6 +31,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
         Arduino_TFT_CATEGORY:'TFT',
         INITR_GREENTAB:'GREEN TAB(ST7735)',
         INITR_REDTAB:'RED TAB(ST7735)',
@@ -124,6 +127,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
         Arduino_TFT_CATEGORY: 'TFT',
         INITR_GREENTAB: 'GRÜN TAB(ST7735)',
         INITR_REDTAB: 'ROT TAB(ST7735)',
@@ -217,6 +223,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
         Arduino_TFT_CATEGORY: 'TFT',
         INITR_GREENTAB: 'Pestaña VERDE(ST7735)',
         INITR_REDTAB: 'Pestaña ROJA(ST7735)',
@@ -310,6 +319,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
          Arduino_TFT_CATEGORY: 'TFT',
          INITR_GREENTAB: 'TAB VERT (ST7735)',
          INITR_REDTAB: 'TAB ROUGE (ST7735)',
@@ -403,6 +415,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
          Arduino_TFT_CATEGORY: 'TFT',
          INITR_GREENTAB: 'GREEN TAB(ST7735)',
          INITR_REDTAB: 'RED TAB(ST7735)',
@@ -496,6 +511,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
          Arduino_TFT_CATEGORY: 'TFT',
          INITR_GREENTAB: 'GREEN TAB(ST7735)',
          INITR_REDTAB: 'RED TAB(ST7735)',
@@ -589,6 +607,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Czas działania (milisekundy)',
+        KS_MICROS: 'Czas działania (mikrosekundy)',
         Arduino_TFT_CATEGORY: 'TFT',
         INITR_GREENTAB: 'ZIELONA KARTKA(ST7735)',
         INITR_REDTAB: 'CZERWONA KARTKA(ST7735)',
@@ -682,6 +703,10 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
+         
          Arduino_TFT_CATEGORY: 'TFT',
          INITR_GREENTAB: 'TAB VERDE (ST7735)',
          INITR_REDTAB: 'TAB VERMELHO (ST7735)',
@@ -775,6 +800,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Таймер',
+         KS_MILLIS: 'Время работы (миллисекунды)',
+         KS_MICROS: 'Время работы (микросекунды)',
          Arduino_TFT_CATEGORY: 'TFT',
          INITR_GREENTAB: 'ЗЕЛЕНАЯ ВКЛАДКА(ST7735)',
          INITR_REDTAB: 'КРАСНАЯ ВКЛАДКА(ST7735)',
@@ -869,6 +897,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3', 
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
         Arduino_TFT_CATEGORY:'TFT',
         INITR_GREENTAB:'綠色標籤(ST7735)',
         INITR_REDTAB:'紅色標籤(ST7735)',
@@ -963,6 +994,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
         Arduino_TFT_CATEGORY:'TFT',
         INITR_GREENTAB:'绿色标签(ST7735)',
         INITR_REDTAB:'红色标签(ST7735)',
@@ -1057,6 +1091,9 @@ function addMsg (Blockly) {
         KS_data: '%1', 
         KS_LOGIC_LABEL: 'Logica',
         KS_judge: '%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
         Arduino_TFT_CATEGORY: 'TFT',
         INITR_GREENTAB: 'Tab verde (ST7735)',
         INITR_REDTAB: 'Tab rosso (ST7735)',

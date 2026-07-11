@@ -31,6 +31,10 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
+        
         RGB_CATEGORY: 'RGB LED',
         RGB_DIGITAL: 'RGB Lamp Red#%1 R_state%2 Green#%3 G_State%4 Blue#%5 B_State%6',
         RGB_ANALOG: 'RGB Lamp Red#%1 R_analogWrite%2 Green#%3 G_analogWrite%4 Blue#%5 B_analogWrite%6',
@@ -111,6 +115,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
         RGB_CATEGORY: 'RGB-LED',
         RGB_DIGITAL: 'RGB-Lampe Rot#%1 R_state%2 Grün#%3 G_State%4 Blau#%5 B_State%6',
         RGB_ANALOG: 'RGB-Lampe Rot#%1 R_analogWrite%2 Grün#%3 G_analogWrite%4 Blau#%5 B_analogWrite%6',
@@ -190,7 +197,10 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
-        RGB_CATEGORÍA: 'LED RGB',
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
+        RGB_CATEGORY: 'LED RGB',
         RGB_DIGITAL: 'Lámpara RGB Rojo#%1 R_state%2 Verde#%3 G_State%4 Azul#%5 B_State%6',
         RGB_ANALOG: 'Lámpara RGB Rojo#%1 R_analogWrite%2 Verde#%3 G_analogWrite%4 Azul#%5 B_analogWrite%6',
         BUZZER_CATEGORY: 'Zumbador pasivo',
@@ -269,6 +279,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
          RGB_CATEGORY: 'DEL RVB',
          RGB_DIGITAL: 'Lampe RVB Rouge#%1 R_state%2 Vert#%3 G_State%4 Bleu#%5 B_State%6',
          RGB_ANALOG: 'Lampe RVB Rouge#%1 R_analogWrite%2 Vert#%3 G_analogWrite%4 Bleu#%5 B_analogWrite%6',
@@ -348,6 +361,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
          RGB_CATEGORY: 'RGB LED',
          RGB_DIGITAL: 'RGB ランプ 赤#%1 R_state%2 緑#%3 G_State%4 青#%5 B_State%6',
          RGB_ANALOG: 'RGB ランプ 赤#%1 R_analogWrite%2 緑#%3 G_analogWrite%4 青#%5 B_analogWrite%6',
@@ -427,6 +443,10 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
+
          RGB_CATEGORY: 'RGB LED',
          RGB_DIGITAL: 'RGB 램프 빨강#%1 R_state%2 초록#%3 G_State%4 파랑#%5 B_State%6',
          RGB_ANALOG: 'RGB 램프 빨강#%1 R_analogWrite%2 초록#%3 G_analogWrite%4 파랑#%5 B_analogWrite%6',
@@ -506,6 +526,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Czas działania (milisekundy)',
+        KS_MICROS: 'Czas działania (mikrosekundy)',
         RGB_CATEGORY: 'LED RGB',
         RGB_DIGITAL: 'Lampa RGB Czerwona#%1 R_state%2 Zielona#%3 G_State%4 Niebieska#%5 B_State%6',
         RGB_ANALOG: 'Lampa RGB Czerwona#%1 R_analogWrite%2 Zielona#%3 G_analogWrite%4 Niebieska#%5 B_analogWrite%6',
@@ -585,6 +608,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
          RGB_CATEGORY: 'LED RGB',
          RGB_DIGITAL: 'RGB Lamp Red#%1 R_state%2 Green#%3 G_State%4 Blue#%5 B_State%6',
          RGB_ANALOG: 'RGB Lamp Red#%1 R_analogWrite%2 Green#%3 G_analogWrite%4 Blue#%5 B_analogWrite%6',
@@ -665,6 +691,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL: 'Логика',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Таймер',
+        KS_MILLIS: 'Время работы (миллисекунды)',
+        KS_MICROS: 'Время работы (микросекунды)',
         RGB_CATEGORY: 'Свет RGB',
         RGB_DIGITAL: 'Уровень RGB светло-красный#%1 равен %2, зеленый#%3 равен %4, уровень синего#%5 равен %6',
         RGB_ANALOG: 'RGB светло-красный#%1 аналоговый выход%2 зеленый#%3 аналоговый выход%4 синий#%5 аналоговый выход%6',
@@ -747,6 +776,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
         RGB_CATEGORY: 'RGB燈',
         RGB_DIGITAL: 'RGB燈 紅#%1 電平為%2 綠#%3 電平為%4 藍#%5 電平為%6',
         RGB_ANALOG: 'RGB燈 紅#%1 模擬輸出%2 綠#%3 模擬輸出%4 藍#%5 模擬輸出%6',
@@ -826,6 +858,9 @@ function addMsg (Blockly) {
         KS_data: '%1',
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
         RGB_CATEGORY: 'RGB灯',
         RGB_DIGITAL: 'RGB灯 红#%1 电平为%2 绿#%3 电平为%4 蓝#%5 电平为%6',
         RGB_ANALOG: 'RGB灯 红#%1 模拟输出%2 绿#%3 模拟输出%4 蓝#%5 模拟输出%6',
@@ -904,6 +939,9 @@ function addMsg (Blockly) {
         
         KS_LOGIC_LABEL: 'Logica',
         KS_judge: '%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
         RGB_CATEGORY: 'RGB LED',
         RGB_DIGITAL: 'LED RGB Rosso#%1 Livello %2 Verde#%3 Livello %4 Blu#%5 Livello %6',
         RGB_ANALOG: 'LED RGB Rosso#%1 Uscita analogica %2 Verde#%3 Uscita analogica %4 Blu#%5 Uscita analogica %6',

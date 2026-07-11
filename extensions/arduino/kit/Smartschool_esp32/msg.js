@@ -31,6 +31,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
 
         LED_CATEGORY: 'Lamp',
         LED_SET_LED_STATE: 'lamp interface %1 output %2',
@@ -119,6 +122,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
         LED_CATEGORY: 'Lampe',
         LED_SET_LED_STATE: 'Lampenschnittstelle %1 Ausgang %2',
         LED_ANALOG: 'Lampe %1 Kanal %2 analoger Ausgang %3',
@@ -205,6 +211,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
         LED_CATEGORY: 'Lámpara',
         LED_SET_LED_STATE: 'Interfaz de lámpara %1 salida %2',
         LED_ANALOG: 'Lámpara %1 canal %2 salida analógica %3',
@@ -291,6 +300,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
          LED_CATEGORY: 'Lampe',
          LED_SET_LED_STATE: 'Interface de lampe %1 sortie %2',
          LED_ANALOG: 'Lampe %1 canal %2 sortie analogique %3',
@@ -377,6 +389,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
          LED_CATEGORY: 'ランプ',
          LED_SET_LED_STATE: 'ランプ インターフェース%1 出力%2',
          LED_ANALOG: 'ランプ %1 チャンネル%2 アナログ出力%3',
@@ -463,6 +478,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
          LED_CATEGORY: '램프',
         LED_SET_LED_STATE: '램프 인터페이스 %1 출력 %2',
         LED_ANALOG: '램프 %1 채널 %2 아날로그 출력 %3',
@@ -549,6 +567,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Czas działania (milisekundy)',
+        KS_MICROS: 'Czas działania (mikrosekundy)',
         LED_CATEGORY: 'Lampa',
         LED_SET_LED_STATE: 'Interfejs lampy %1 wyjście %2',
         LED_ANALOG: 'Lampa %1 kanał %2 wyjście analogowe %3',
@@ -635,6 +656,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
          LED_CATEGORY: 'Lâmpada',
         LED_SET_LED_STATE: 'Interface da lâmpada %1 saída %2',
         LED_ANALOG: 'Lâmpada %1 canal %2 saída analógica %3',
@@ -721,6 +745,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Таймер',
+         KS_MILLIS: 'Время работы (миллисекунды)',
+         KS_MICROS: 'Время работы (микросекунды)',
          LED_CATEGORY: 'Лампа',
          LED_SET_LED_STATE: 'Интерфейс лампы %1 выход %2',
          LED_ANALOG: 'Лампа %1 канал %2 аналоговый выход %3',
@@ -808,6 +835,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
         LED_CATEGORY: '操場燈',
         LED_SET_LED_STATE: '操場燈 接口%1 輸出%2 ',
         LED_ANALOG: '操場燈 %1 通道%2 模擬輸出%3',
@@ -895,6 +925,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
         LED_CATEGORY: '操场灯',
         LED_SET_LED_STATE: '操场灯 接口%1 输出%2 ',
         LED_ANALOG: '操场灯 %1 通道%2 模拟输出%3',
@@ -981,6 +1014,9 @@ function addMsg (Blockly) {
         KS_data: '%1', 
         KS_LOGIC_LABEL: 'Logica',
         KS_judge: '%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
         LED_CATEGORY: 'Lampada',
         LED_SET_LED_STATE: 'Interfaccia lampada %1 uscita %2',
         LED_ANALOG: 'Lampada %1 canale %2 uscita analogica %3',

@@ -1,9 +1,9 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
-    
-return `
+function addToolbox() {
+
+    return `
     
 <category name="%{BKY_KS_VARIABLE_LABEL}" id="KS_OTHER_CATEGORY" colour="#FF4500" secondaryColour="#42CCFF">
     <block type="KS_variables_declare">
@@ -86,7 +86,12 @@ return `
     </block>
     
 </category>
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="%{BKY_LED_CATEGORY}" id="BKY_LED_CATEGORY" colour="#573e00" secondaryColour="#573e00">
     <block type="LED_setLEDState" id="LED_setLEDState">
         <field name="pin">2</field>
@@ -230,7 +235,7 @@ return `
     <block type="motor130" id="motor130">
         <field name="IN1">18</field>
         <field name="IN2">19</field>
-        <value name="SPEED">
+        <value name="SPEED2">
             <shadow type="math_uint8_number">
                 <field name="NUM">255</field>
             </shadow>

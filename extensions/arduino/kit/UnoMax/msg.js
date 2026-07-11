@@ -31,6 +31,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED interface %1  state %2 ',
         LED_ON: 'open',
@@ -101,6 +104,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED-Schnittstelle %1 Zustand %2 ',
         LED_ON: 'offen',
@@ -170,7 +176,10 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
-        CATEGORÍA_LED: 'LED',
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
+        LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'Interfaz LED %1 estado %2 ',
         LED_ON: 'abierto',
         LED_OFF: 'cerrar',
@@ -239,6 +248,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
          LED_CATEGORY: 'DEL',
          LED_SET_LED_STATE: 'interface LED %1 état %2 ',
          LED_ON: 'ouvert',
@@ -308,6 +320,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'LED インターフェイス %1 状態 %2 ',
          LED_ON: '開く',
@@ -377,6 +392,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'LED 인터페이스 %1 상태 %2',
          LED_ON: '열기',
@@ -515,6 +533,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'interface LED %1 estado %2 ',
          LED_ON: 'aberto',
@@ -584,6 +605,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Таймер',
+         KS_MILLIS: 'Время работы (миллисекунды)',
+         KS_MICROS: 'Время работы (микросекунды)',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'Светодиодный интерфейс %1, состояние %2',
          LED_ON: 'открыто',
@@ -654,6 +678,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED燈 %1 狀態為 %2',
         LED_ON: '點亮',
@@ -725,6 +752,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED灯 %1 状态为 %2',
         LED_ON: '点亮',
@@ -796,7 +826,9 @@ function addMsg (Blockly) {
     
         KS_LOGIC_LABEL: 'Logica',
         KS_judge: '%1 %2 %3',
-    
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'Stato del LED %1 su %2',
         LED_ON: 'Accendi',

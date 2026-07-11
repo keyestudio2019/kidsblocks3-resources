@@ -31,6 +31,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED pin%1 out%2',
         LED_ANALOG: 'LED %1 channel%2 analogWrite%3',
@@ -108,7 +111,7 @@ function addMsg (Blockly) {
         IR_REFRESH: 'Refresh data',
         WIFI_CATEGORY: 'ESP32 WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 password:%2',
-        WIFI_READ_IP: 'WiFi read',
+        WIFI_READ_IP: 'WiFi read ip',
    
     });
     Object.assign(Blockly.ScratchMsgs.locales['de'], {
@@ -140,6 +143,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED-Pin%1 aus%2',
         LED_ANALOG: 'LED %1 Kanal%2 AnalogWrite%3',
@@ -217,7 +223,7 @@ function addMsg (Blockly) {
         IR_REFRESH: 'Daten aktualisieren',
         WIFI_CATEGORY: 'ESP32 WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 passwort:%2',
-        WIFI_READ_IP: 'WiFi lesen',
+        WIFI_READ_IP: 'WiFi lesen ip',
     });
     Object.assign(Blockly.ScratchMsgs.locales['es'], {
         KS_VARIABLE_LABEL:'Tipo de variable',
@@ -248,6 +254,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'Pin de LED%1 fuera%2',
         LED_ANALOG: 'LED %1 canal%2 escritura analógica%3',
@@ -260,7 +269,7 @@ function addMsg (Blockly) {
         BUTTON_CATEGORY: 'Botón',
         BUTTON_READ_STATE: '¿Se presionó el botón de la interfaz %1?',
         BUTTON_READ_VALUE: 'El valor de estado del botón en la interfaz %1',
-        PIR_CATEGORÍA: 'PIR',
+        PIR_CATEGORY: 'PIR',
         PIR_READ_VALUE: 'Interfaz de lectura %1 sensor de movimiento PIR',
         LIGHTSENSOR_CATEGORY: 'Luz',
         LIGHTSENSOR_READ_VALUE: 'leer el valor de la luz %1',
@@ -356,6 +365,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
          LED_CATEGORY: 'DEL',
          LED_SET_LED_STATE: 'Broche LED%1 sortie%2',
          LED_ANALOG: 'LED %1 canal%2 analogWrite%3',
@@ -464,6 +476,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'LED ピン %1 出力 %2',
          LED_ANALOG: 'LED %1 チャネル%2 アナログ書き込み%3',
@@ -572,6 +587,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'LED 핀%1 아웃%2',
          LED_ANALOG: 'LED %1 채널%2 analogWrite%3',
@@ -680,6 +698,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Czas działania (milisekundy)',
+        KS_MICROS: 'Czas działania (mikrosekundy)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED pin%1 out%2',
         LED_ANALOG: 'LED %1 kanał%2 analogWrite%3',
@@ -788,6 +809,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'LED pino%1 fora%2',
          LED_ANALOG: 'LED %1 canal%2 analogWrite%3',
@@ -896,6 +920,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Таймер',
+         KS_MILLIS: 'Время работы (миллисекунды)',
+         KS_MICROS: 'Время работы (микросекунды)',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'LED pin%1 out%2',
          LED_ANALOG: 'Индикатор %1, канал %2, аналоговая запись%3',
@@ -1005,6 +1032,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED 接口%1 輸出%2 ',
         LED_ANALOG: 'LED燈 %1 通道%2 模擬輸出%3',
@@ -1114,6 +1144,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED 接口%1 输出%2 ',
         LED_ANALOG: 'LED灯 %1 通道%2 模拟输出%3',
@@ -1221,6 +1254,9 @@ function addMsg (Blockly) {
         KS_data: '%1', 
         KS_LOGIC_LABEL: 'Logica',
         KS_judge: '%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED Interfaccia %1 Imposta %2 ',
         LED_ANALOG: 'LED %1 Canale %2 Imposta valore analogico %3',

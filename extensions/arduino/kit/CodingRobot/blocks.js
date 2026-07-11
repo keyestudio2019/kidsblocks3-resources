@@ -228,6 +228,24 @@ const secondaryColour = '#CD5C5C';
             });
         }
     };
+    Blockly.Blocks.KS_millis = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.KS_MILLIS,
+                colour: color2,
+                extensions: ['output_number']
+            });
+        }
+    };
+    Blockly.Blocks.KS_micros = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.KS_MICROS,
+                colour: color2,
+                extensions: ['output_number']
+            });
+        }
+    };
 //robot move
 
     Blockly.Blocks.robot_forward = {

@@ -86,7 +86,12 @@ return `
     </block>
     
 </category>
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="%{BKY_LED_CATEGORY}" id="BKY_LED_CATEGORY" colour="#00BFFF" secondaryColour="#00BFFF">
     <block type="LED_setLEDState" id="LED_setLEDState">
         <field name="pin">2</field>

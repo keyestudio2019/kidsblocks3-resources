@@ -106,7 +106,14 @@ function addGenerator (Blockly) {
         var judge = this.getFieldValue('judge');
         return [`${val1} ${judge} ${val2}`, Blockly.Arduino.ORDER_ATOMIC];
     }; 
-
+    Blockly.Arduino.KS_millis = function() {
+      var code = "millis()";
+      return [code, Blockly.Arduino.ORDER_ATOMIC];
+    };
+    Blockly.Arduino.KS_micros = function() {
+      var code = "micros()";
+      return [code, Blockly.Arduino.ORDER_ATOMIC];
+    };
     Blockly.Arduino.Arduino_TFT_begin1 = function() {
         var dropdown_st7735_tab = this.getFieldValue('TFT_tab');
         var value_st7735_rst = this.getFieldValue('RST');

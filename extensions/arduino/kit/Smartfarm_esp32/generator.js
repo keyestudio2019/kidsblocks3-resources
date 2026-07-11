@@ -1,113 +1,114 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function addGenerator(Blockly) {
     //定义变量
-    Blockly.Arduino.KS_variables_declare = function() {
+    Blockly.Arduino.KS_variables_declare = function () {
         var type = this.getFieldValue('TYPE');
         var VARIABLES_TYPE = this.getFieldValue('variables_type');
-        var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        name = name.replace(/\"/g,'');
-        var value = Blockly.Arduino.valueToCode(this, 'VALUE',Blockly.Arduino.ORDER_ASSIGNMENT) || ' ';
-        value = value.replace(/\"/g,'');
+        var name = Blockly.Arduino.valueToCode(this, 'VAR', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        name = name.replace(/\"/g, '');
+        var value = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ASSIGNMENT) || ' ';
+        value = value.replace(/\"/g, '');
 
-        let code ='';
+        let code = '';
         //code = type + ' ' + name + ' = '+value+';\n';
-        if(VARIABLES_TYPE == 'global_variate')
-        {
-            if(type == 'String')
-            {
-                Blockly.Arduino.definitions_['var_declare' + name] =  type + ' ' + name + ' = "'+value+'";\n';
+        if (VARIABLES_TYPE == 'global_variate') {
+            if (type == 'String') {
+                Blockly.Arduino.definitions_['var_declare' + name] = type + ' ' + name + ' = "' + value + '";\n';
             }
-            else
-            {
-                Blockly.Arduino.definitions_['var_declare' + name] =  type + ' ' + name + ' = '+value+';\n';
+            else {
+                Blockly.Arduino.definitions_['var_declare' + name] = type + ' ' + name + ' = ' + value + ';\n';
             }
         }
-          
-        else
-        {
-            if(type == 'String')
-            {
-                code = type + ' ' + name + ' = "'+value+'";\n';
+
+        else {
+            if (type == 'String') {
+                code = type + ' ' + name + ' = "' + value + '";\n';
             }
-            else
-            {
-                code = type + ' ' + name + ' = '+value+';\n';
+            else {
+                code = type + ' ' + name + ' = ' + value + ';\n';
             }
-          
+
         }
 
         return code;
     };
     //变量get
-    Blockly.Arduino.KS_variables_get = function() {
-        var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        name = name.replace(/\"/g,'');
+    Blockly.Arduino.KS_variables_get = function () {
+        var name = Blockly.Arduino.valueToCode(this, 'VAR', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        name = name.replace(/\"/g, '');
         code = name;
         return [code, Blockly.Arduino.ORDER_ATOMIC];
         //return [code, Blockly.Arduino.ORDER_NONE];
     };
     //变量set
-    Blockly.Arduino.KS_variables_set = function() {
-        var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        name = name.replace(/\"/g,'');
-        var value = Blockly.Arduino.valueToCode(this, 'VALUE',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        value = value.replace(/\"/g,'');
-        code = name+'\='+value+';\n';
+    Blockly.Arduino.KS_variables_set = function () {
+        var name = Blockly.Arduino.valueToCode(this, 'VAR', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        name = name.replace(/\"/g, '');
+        var value = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        value = value.replace(/\"/g, '');
+        code = name + '\=' + value + ';\n';
         return code;
     };
 
     //字符串变量set
-    Blockly.Arduino.KS_variables_stringSet = function() {
-        var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        name = name.replace(/\"/g,'');
-        var value = Blockly.Arduino.valueToCode(this, 'VALUE',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        code = name+'\='+value+';\n';
+    Blockly.Arduino.KS_variables_stringSet = function () {
+        var name = Blockly.Arduino.valueToCode(this, 'VAR', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        name = name.replace(/\"/g, '');
+        var value = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        code = name + '\=' + value + ';\n';
         return code;
     };
     //变量++--
-    Blockly.Arduino.KS_variables_change = function() {
+    Blockly.Arduino.KS_variables_change = function () {
         var type = this.getFieldValue('TYPE');
-        var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        name = name.replace(/\"/g,'');
-        code = name+type+';\n';
+        var name = Blockly.Arduino.valueToCode(this, 'VAR', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        name = name.replace(/\"/g, '');
+        code = name + type + ';\n';
         return code;
     };
 
     //文本char
-    Blockly.Arduino.KS_CHAR = function() {
-        var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        name = name.replace(/\"/g,'');
+    Blockly.Arduino.KS_CHAR = function () {
+        var name = Blockly.Arduino.valueToCode(this, 'VAR', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        name = name.replace(/\"/g, '');
         return [`\'${name}\'`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
     //文本string
-    Blockly.Arduino.KS_STRING = function() {
-        var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||" " ;
-        name = name.replace(/\"/g,'');
+    Blockly.Arduino.KS_STRING = function () {
+        var name = Blockly.Arduino.valueToCode(this, 'VAR', Blockly.Arduino.ORDER_ATOMIC) || " ";
+        name = name.replace(/\"/g, '');
         return [`\"${name}\"`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
-    Blockly.Arduino.KS_data = function() {
-        var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        name = name.replace(/\"/g,'');
+    Blockly.Arduino.KS_data = function () {
+        var name = Blockly.Arduino.valueToCode(this, 'VAR', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        name = name.replace(/\"/g, '');
         code = name;
         return [code, Blockly.Arduino.ORDER_ATOMIC];
         //return [code, Blockly.Arduino.ORDER_NONE];
     };
-   
+
     //逻辑比较
-    Blockly.Arduino.KS_judge = function() {
-        var val1 = Blockly.Arduino.valueToCode(this, 'VALUE1',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        val1 = val1.replace(/\"/g,'');
-        var val2 = Blockly.Arduino.valueToCode(this, 'VALUE2',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        val2 = val2.replace(/\"/g,'');
+    Blockly.Arduino.KS_judge = function () {
+        var val1 = Blockly.Arduino.valueToCode(this, 'VALUE1', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        val1 = val1.replace(/\"/g, '');
+        var val2 = Blockly.Arduino.valueToCode(this, 'VALUE2', Blockly.Arduino.ORDER_ATOMIC) || ' ';
+        val2 = val2.replace(/\"/g, '');
         var judge = this.getFieldValue('judge');
         return [`${val1} ${judge} ${val2}`, Blockly.Arduino.ORDER_ATOMIC];
-    }; 
-
-//LED 
+    };
+    Blockly.Arduino.KS_millis = function () {
+        var code = "millis()";
+        return [code, Blockly.Arduino.ORDER_ATOMIC];
+    };
+    Blockly.Arduino.KS_micros = function () {
+        var code = "micros()";
+        return [code, Blockly.Arduino.ORDER_ATOMIC];
+    };
+    //LED 
 
     Blockly.Arduino.LED_setLEDState = function (block) {
         //const pin = Blockly.Arduino.valueToCode(block, 'pin', Blockly.Arduino.ORDER_ATOMIC);
@@ -117,9 +118,9 @@ function addGenerator (Blockly) {
         Blockly.Arduino.setups_.Led_init = `pinMode(${pin}, OUTPUT);`;
 
         return `digitalWrite(${pin}, ${state});\n`;
-};
+    };
 
-    Blockly.Arduino.led_analog = function(block) {
+    Blockly.Arduino.led_analog = function (block) {
         const pin = block.getFieldValue('PIN') || '0';
         const val = Blockly.Arduino.valueToCode(block, 'VAL', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 0;
         const ch = block.getFieldValue('CH') || '0';
@@ -128,32 +129,32 @@ function addGenerator (Blockly) {
 
         return `ledcWrite(${pin}, ${val});\n`;
     };
-  //buzzer
+    //buzzer
     Blockly.Arduino.buzzer_tone_d = function (block) {
         const pin = block.getFieldValue('PIN');
         const fre = this.getFieldValue('fre');
         const dur = Blockly.Arduino.valueToCode(block, 'dur', Blockly.Arduino.ORDER_ATOMIC);
 
-        Blockly.Arduino.setups_[`buzzer_${pin}`] = 'pinMode('+pin+', OUTPUT);\n';
-        return 'tone('+pin+', '+fre+', '+dur+');\n';
+        Blockly.Arduino.setups_[`buzzer_${pin}`] = 'pinMode(' + pin + ', OUTPUT);\n';
+        return 'tone(' + pin + ', ' + fre + ', ' + dur + ');\n';
     };
 
     Blockly.Arduino.buzzer_music = function (block) {
         const pin = block.getFieldValue('PIN');
         const mus = this.getFieldValue('mus');
         Blockly.Arduino.includes_.include_music_init = `#include<musicESP32.h>\n`;
-        Blockly.Arduino.definitions_[`music_${pin}`] = 'music Music('+pin+');';
+        Blockly.Arduino.definitions_[`music_${pin}`] = 'music Music(' + pin + ');';
 
-        Blockly.Arduino.setups_[`buzzer_${pin}`] = 'pinMode('+pin+', OUTPUT);\n';
-        return ''+mus+'\n';
+        Blockly.Arduino.setups_[`buzzer_${pin}`] = 'pinMode(' + pin + ', OUTPUT);\n';
+        return '' + mus + '\n';
     };
 
     Blockly.Arduino.buzzer_notone = function (block) {
         const pin = block.getFieldValue('PIN');
-        Blockly.Arduino.setups_[`buzzer_${pin}`] = 'pinMode('+pin+', OUTPUT);\n';
-        return 'noTone('+pin+');\n';
+        Blockly.Arduino.setups_[`buzzer_${pin}`] = 'pinMode(' + pin + ', OUTPUT);\n';
+        return 'noTone(' + pin + ');\n';
     };
-   //relay
+    //relay
     Blockly.Arduino.relay = function (block) {
         //const pin = Blockly.Arduino.valueToCode(block, 'pin', Blockly.Arduino.ORDER_ATOMIC);
         const pin = block.getFieldValue('pin');
@@ -165,7 +166,7 @@ function addGenerator (Blockly) {
     };
     //button
 
-    Blockly.Arduino.Button_readState = function(block) {
+    Blockly.Arduino.Button_readState = function (block) {
         var arg0 = block.getFieldValue('pin');
         var code = "(digitalRead(" + arg0 + ")==1)";
         // const pin = Blockly.Arduino.valueToCode(block, 'pin', Blockly.Arduino.ORDER_ATOMIC);
@@ -173,7 +174,7 @@ function addGenerator (Blockly) {
         return [code, Blockly.Arduino.ORDER_ATOMIC];
     };
 
-    Blockly.Arduino.Button_readValue= function(block) {
+    Blockly.Arduino.Button_readValue = function (block) {
         var arg0 = block.getFieldValue('pin');
         var code = "digitalRead(" + arg0 + ")";
         Blockly.Arduino.setups_.Button_init = `pinMode(${arg0}, INPUT);`;
@@ -181,7 +182,7 @@ function addGenerator (Blockly) {
     };
 
     //PIR
-    Blockly.Arduino.pir_readValue = function(block) {
+    Blockly.Arduino.pir_readValue = function (block) {
         var arg0 = block.getFieldValue('pin');
         var code = "digitalRead(" + arg0 + ")";
         Blockly.Arduino.setups_.pir_init = `pinMode(${arg0}, INPUT);`;
@@ -190,7 +191,7 @@ function addGenerator (Blockly) {
     };
 
     //light
-    Blockly.Arduino.lightSensor_readValue = function(block) {
+    Blockly.Arduino.lightSensor_readValue = function (block) {
         var arg0 = block.getFieldValue('pin');
         var code = "analogRead(" + arg0 + ")";
         return [code, Blockly.Arduino.ORDER_ATOMIC];
@@ -198,21 +199,21 @@ function addGenerator (Blockly) {
 
     //water drop
 
-    Blockly.Arduino.dropSensor_readValue = function(block) {
+    Blockly.Arduino.dropSensor_readValue = function (block) {
         var arg0 = block.getFieldValue('pin');
         var code = "analogRead(" + arg0 + ")";
         return [code, Blockly.Arduino.ORDER_ATOMIC];
     };
 
     //water level
-    Blockly.Arduino.waterSensor_readValue = function(block) {
+    Blockly.Arduino.waterSensor_readValue = function (block) {
         var arg0 = block.getFieldValue('pin');
         var code = "analogRead(" + arg0 + ")";
         return [code, Blockly.Arduino.ORDER_ATOMIC];
     };
 
     //soil
-    Blockly.Arduino.soilSensor_readValue = function(block) {
+    Blockly.Arduino.soilSensor_readValue = function (block) {
         var arg0 = block.getFieldValue('pin');
         var code = "analogRead(" + arg0 + ")";
         return [code, Blockly.Arduino.ORDER_ATOMIC];
@@ -262,16 +263,16 @@ function addGenerator (Blockly) {
         const angle = Blockly.Arduino.valueToCode(block, 'angle', Blockly.Arduino.ORDER_ATOMIC);
         const time = Blockly.Arduino.valueToCode(block, 'time', Blockly.Arduino.ORDER_ATOMIC);
         const ch = block.getFieldValue('CH');
-    
-    
-        Blockly.Arduino.definitions_[`servo_${pin}`] = 'const int servopin = '+pin+';\n'+
-        'int set_angle(int angle)\n'+
-        '{\n'+
-        '  int servo_angle = map(angle, 0, 180, 25, 128);\n'+
-        '  return servo_angle;\n'+
-        '}\n';
-        Blockly.Arduino.setups_[`servo_init_${pin}`] = 'ledcAttachChannel('+pin+',50,10,'+ch+');\n';
-        return 'ledcWrite('+pin+', set_angle('+angle+'));\n  delay('+time+');\n';
+
+
+        Blockly.Arduino.definitions_[`servo_${pin}`] = 'const int servopin = ' + pin + ';\n' +
+            'int set_angle(int angle)\n' +
+            '{\n' +
+            '  int servo_angle = map(angle, 0, 180, 25, 128);\n' +
+            '  return servo_angle;\n' +
+            '}\n';
+        Blockly.Arduino.setups_[`servo_init_${pin}`] = 'ledcAttachChannel(' + pin + ',50,10,' + ch + ');\n';
+        return 'ledcWrite(' + pin + ', set_angle(' + angle + '));\n  delay(' + time + ');\n';
     };
 
     //motor
@@ -280,13 +281,22 @@ function addGenerator (Blockly) {
         const pin2 = block.getFieldValue('IN2');
         //const val1 = Blockly.Arduino.valueToCode(block, 'SPEED1', Blockly.Arduino.ORDER_ATOMIC);
         const state = this.getFieldValue('state');
-        const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+        const val2 = Blockly.Arduino.valueToCode(block, 'SPEED2', Blockly.Arduino.ORDER_ATOMIC);
 
-        Blockly.Arduino.setups_[`motor130`] = 'pinMode('+pin1+', OUTPUT);\n ledcAttachChannel('+pin2+',490,8,1);\n'
-        
-        return 'digitalWrite('+pin1+','+state+');\nledcWrite('+pin2+', '+val+');\n';
+        Blockly.Arduino.setups_[`motor130`] = 'pinMode(' + pin1 + ', OUTPUT);\n ledcAttachChannel(' + pin2 + ',490,8,1);\n'
+
+        return 'digitalWrite(' + pin1 + ',' + state + ');\nledcWrite(' + pin2 + ', ' + val2 + ');\n';
     };
-    
+
+    Blockly.Arduino.buzzer_tone_d = function (block) {
+        const pin = block.getFieldValue('PIN');
+        const fre = this.getFieldValue('fre');
+        const dur = Blockly.Arduino.valueToCode(block, 'dur', Blockly.Arduino.ORDER_ATOMIC);
+
+        Blockly.Arduino.setups_[`buzzer_${pin}`] = 'pinMode(' + pin + ', OUTPUT);\n';
+        return 'tone(' + pin + ', ' + fre + ', ' + dur + ');\n';
+    };
+
     // 1602 LCD
     Blockly.Arduino.lcd_init = function (block) {
         const addr = block.getFieldValue('ADDR');
@@ -295,35 +305,35 @@ function addGenerator (Blockly) {
         Blockly.Arduino.definitions_.lcd_init = `LiquidCrystal_I2C lcd(${addr}, 16, 2);`;
 
         return `lcd.begin();\n`;
-        };
+    };
 
-        Blockly.Arduino.lcd_setCursorPosition = function (block) {
+    Blockly.Arduino.lcd_setCursorPosition = function (block) {
         const x = Blockly.Arduino.valueToCode(block, 'X', Blockly.Arduino.ORDER_ATOMIC);
         const y = Blockly.Arduino.valueToCode(block, 'Y', Blockly.Arduino.ORDER_ATOMIC);
 
         return `lcd.setCursor(${x}, ${y});\n`;
-        };
+    };
 
-        Blockly.Arduino.lcd_print = function (block) {
+    Blockly.Arduino.lcd_print = function (block) {
         const data = Blockly.Arduino.valueToCode(block, 'DATA', Blockly.Arduino.ORDER_ATOMIC);
 
         return `lcd.print(${data});\n`;
-        };
+    };
 
-        Blockly.Arduino.lcd_clear = function () {
+    Blockly.Arduino.lcd_clear = function () {
         return `lcd.clear();\n`;
-        };
+    };
 
-        Blockly.Arduino.lcd_setBackLight = function (block) {
+    Blockly.Arduino.lcd_setBackLight = function (block) {
         const state = block.getFieldValue('STATE');
 
         if (state === 'on') {
             return `lcd.backlight();\n`;
         }
         return `lcd.noBacklight();\n`;
-        };
+    };
 
-        Blockly.Arduino.lcd_setCursorStyle = function (block) {
+    Blockly.Arduino.lcd_setCursorStyle = function (block) {
         const state = block.getFieldValue('STATE');
         const style = block.getFieldValue('STYLE');
 
@@ -350,7 +360,7 @@ function addGenerator (Blockly) {
         const passwd = Blockly.Arduino.valueToCode(block, 'PASSWD', Blockly.Arduino.ORDER_ATOMIC);
 
         Blockly.Arduino.includes_.wifi_init = '#include <WiFi.h>\n';
-        Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = '+ssid+';\nconst char* password = '+passwd+';\n';
+        Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = ' + ssid + ';\nconst char* password = ' + passwd + ';\n';
         Blockly.Arduino.setups_['wifi_setup'] = 'WiFi.begin(ssid, password);\n  while (WiFi.status() != WL_CONNECTED) {\n    delay(500);\n  }';
 
         return '';
@@ -390,7 +400,7 @@ function addGenerator (Blockly) {
 
         Blockly.Arduino.definitions_.wifi_send_data = 'DHT dht_1(17, 11);\n';
 
-        Blockly.Arduino.setups_.wifi_send_data = 
+        Blockly.Arduino.setups_.wifi_send_data =
             '  pinMode(27,OUTPUT);\n' +
             '  pinMode(35,INPUT);\n' +
             '  pinMode(34,INPUT);\n' +
@@ -399,30 +409,30 @@ function addGenerator (Blockly) {
             '  pinMode(19,OUTPUT);\n' +
             '  dht_1.begin();\n';
 
-        Blockly.Arduino.definitions_[`dataHandle_`] = 
-            'String dataHandle(int data)\n'+
-            '{\n'+
-            '  int percentage = (data / 4095.0) * 100;\n'+
+        Blockly.Arduino.definitions_[`dataHandle_`] =
+            'String dataHandle(int data)\n' +
+            '{\n' +
+            '  int percentage = (data / 4095.0) * 100;\n' +
 
-            '  char hexString[3];\n'+
-            '  sprintf(hexString, "%02X", percentage);\n'+
-            '  return hexString;\n'+
+            '  char hexString[3];\n' +
+            '  sprintf(hexString, "%02X", percentage);\n' +
+            '  return hexString;\n' +
             '}\n';
 
         return 'String request = "";\n' +
-                'if (client.available())\n' + 
-                '{\n' +
-                    '  request = client.readStringUntil(\'s\');\n' +
-                '}\n'+
-                'String dataBuffer = "";\n' + 
-                'dataBuffer+=String((int(dht_1.readTemperature())),HEX);\n' + 
-                'dataBuffer+=String((int(dht_1.readHumidity())),HEX);\n' + 
-                'dataBuffer+=dataHandle(analogRead(32) * 1.8);\n' + 
-                'dataBuffer+=dataHandle(analogRead(34));\n' + 
-                'dataBuffer+=dataHandle(analogRead(33) * 1.8);\n' + 
-                'dataBuffer+=dataHandle(analogRead(35));\n' + 
-                'client.print(dataBuffer);\n' + 
-                'delay(500);\n';
+            'if (client.available())\n' +
+            '{\n' +
+            '  request = client.readStringUntil(\'s\');\n' +
+            '}\n' +
+            'String dataBuffer = "";\n' +
+            'dataBuffer+=String((int(dht_1.readTemperature())),HEX);\n' +
+            'dataBuffer+=String((int(dht_1.readHumidity())),HEX);\n' +
+            'dataBuffer+=dataHandle(analogRead(32) * 1.8);\n' +
+            'dataBuffer+=dataHandle(analogRead(34));\n' +
+            'dataBuffer+=dataHandle(analogRead(33) * 1.8);\n' +
+            'dataBuffer+=dataHandle(analogRead(35));\n' +
+            'client.print(dataBuffer);\n' +
+            'delay(500);\n';
     };
 
     return Blockly;

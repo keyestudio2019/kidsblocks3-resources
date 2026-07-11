@@ -12,7 +12,7 @@ const ESP32S = formatMessage => ({
     disabled: false,
     bluetoothRequired: false,
     serialportRequired: true,
-    defaultBaudRate: '9600',
+    defaultBaudRate: '115200',
     pnpidList: null, // Use default pnp list
     internetConnectionRequired: false,
     launchPeripheralConnectionFlow: true,

@@ -133,7 +133,15 @@ function addGenerator (Blockly) {
         var judge = this.getFieldValue('judge');
         return [`${val1} ${judge} ${val2}`, Blockly.Arduino.ORDER_ATOMIC];
     }; 
-
+    //计时器
+    Blockly.Arduino.KS_millis = function() {
+        var code = "millis()";
+        return [code, Blockly.Arduino.ORDER_ATOMIC];
+      };
+    Blockly.Arduino.KS_micros = function() {
+        var code = "micros()";
+        return [code, Blockly.Arduino.ORDER_ATOMIC];
+      };
     //buzzer
     Blockly.Arduino.buzzer_tone_d = function (block) {
         const pin = block.getFieldValue('PIN');
@@ -273,7 +281,7 @@ function addGenerator (Blockly) {
     Blockly.Arduino.matrix_iic_init = function (block) {
         Blockly.Arduino.definitions_[`matrix`] = '#include <Matrix.h>\n'+
         'Matrix myMatrix(21,22);\nuint8_t  LEDArray[8];';
-        Blockly.Arduino.setups_['matrix_pin_setup'] = 'myMatrix.begin(112);\n  myMatrix.clear();';
+        Blockly.Arduino.setups_['matrix_pin_setup'] = 'myMatrix.begin(0x70);\n  myMatrix.clear();';
         return '';
     };
 
@@ -363,11 +371,11 @@ Blockly.Arduino.matrix_iic_display = function (block) {
 
     Blockly.Arduino.definitions_[`matrix_${no}`] = 'uint8_t '+matrix_image+'[8]='+code+''
 
-    Blockly.Arduino.definitions_[`1matrix_display`] = 'int matrix_display(uint8_t led_array[8])'+
+    Blockly.Arduino.definitions_[`1matrix_display`] = 'void matrix_display(uint8_t led_array[8])'+
         '{\n'+
         '  for(int i=0; i<8; i++)\n'+
         '  {\n'+
-        '    LEDArray[i]=led_array[7-i];\n'+
+        '    LEDArray[i]=led_array[i];\n'+
         '    for(int j=7; j>=0; j--)\n'+
         '    {\n'+
         '      if((LEDArray[i]&0x01)>0)\n'+
@@ -395,11 +403,11 @@ Blockly.Arduino.matrix_iic_face = function (block) {
         'uint8_t matrix_heart[8]={0x42,0xe7,0xff,0xff,0xff,0x7e,0x3c,0x18};\n'+
         'uint8_t matrix_clear[8]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};\n';
 
-        Blockly.Arduino.definitions_[`2matrix_display`] = 'int matrix_display(uint8_t led_array[8])'+
+        Blockly.Arduino.definitions_[`2matrix_display`] = 'void matrix_display(uint8_t led_array[8])'+
         '{\n'+
         '  for(int i=0; i<8; i++)\n'+
         '  {\n'+
-        '    LEDArray[i]=led_array[7-i];\n'+
+        '    LEDArray[i]=led_array[i];\n'+
         '    for(int j=7; j>=0; j--)\n'+
         '    {\n'+
         '      if((LEDArray[i]&0x01)>0)\n'+

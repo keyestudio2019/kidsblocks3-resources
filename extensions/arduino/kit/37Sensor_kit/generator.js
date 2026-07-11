@@ -106,6 +106,15 @@ function addGenerator (Blockly) {
         var judge = this.getFieldValue('judge');
         return [`${val1} ${judge} ${val2}`, Blockly.Arduino.ORDER_ATOMIC];
     }; 
+    //计时器
+    Blockly.Arduino.KS_millis = function() {
+        var code = "millis()";
+        return [code, Blockly.Arduino.ORDER_ATOMIC];
+      };
+    Blockly.Arduino.KS_micros = function() {
+        var code = "micros()";
+        return [code, Blockly.Arduino.ORDER_ATOMIC];
+      };
 
 //RGB LED
 

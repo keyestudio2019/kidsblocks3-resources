@@ -87,7 +87,12 @@ function addToolbox () {
     </block>
     
 </category>
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="%{BKY_RELAY_CATEGORY}" id="BKY_RELAY_CATEGORY" colour="#4682b4" secondaryColour="#4682b4">
     <block type="RelayState" id="RelayState">
         <field name="pin">10</field>

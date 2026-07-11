@@ -1,4 +1,10 @@
 
+V1.7.9:
+
+Add ESP32 CAM camera<br>
+add TinyVision AI camera<br>
+add keyes 4WD car.
+
 V1.7.8:
 
 Add AIBOT AI chatbot<br>
@@ -10,17 +16,13 @@ Add AI control light sensors<br>
 Add AI control ultrasonic sensors<br>
 Add AI control smart cars.
 
-
-
 V1.7.7:
 
 Add soil sensor <br>
 Add water level sensor
 
-
 V1.7.6:
 Add ESP32 smart school kit
-
 
 V1.7.5:
 

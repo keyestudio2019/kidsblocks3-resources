@@ -34,6 +34,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
 
         BUZZER_CATEGORY: 'Passive buzzer',
         BUZZER_TONE: 'Tone PIN#%1 frequency%2',
@@ -119,6 +122,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
 
         BUZZER_CATEGORY: 'Passiver Summer',
         BUZZER_TONE: 'Ton-PIN#%1 Frequenz%2',
@@ -201,6 +207,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
 
         BUZZER_CATEGORY: 'Zumbador pasivo',
         BUZZER_TONE: 'Tono PIN#%1 frecuencia%2',
@@ -244,7 +253,7 @@ function addMsg (Blockly) {
         LCD_STYLE_BLINK: 'parpadeo',
         LCD_STYLE_NOBLINK: 'sin parpadeo',
         
-        WIFI_CATEGORÍA: 'WIFI',
+        WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 contraseña:%2',
         // WIFI_READ: 'Lectura WiFi',
         WIFI_READ_IP: 'WiFi leer ip',
@@ -283,6 +292,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
 
          BUZZER_CATEGORY: "Sonnerie passive",
          BUZZER_TONE: 'Tonalité PIN #%1 fréquence%2',
@@ -365,6 +377,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
 
          BUZZER_CATEGORY: 'パッシブブザー',
          BUZZER_TONE: 'トーン PIN#%1 頻度%2',
@@ -447,6 +462,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
 
          BUZZER_CATEGORY: '패시브 버저',
          BUZZER_TONE: '톤 PIN#%1 주파수%2',
@@ -529,6 +547,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Czas działania (milisekundy)',
+        KS_MICROS: 'Czas działania (mikrosekundy)',
 
         BUZZER_CATEGORY: 'Brzęczyk pasywny',
         BUZZER_TONE: 'Ton PIN#%1 częstotliwość%2',
@@ -611,6 +632,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
 
          BUZZER_CATEGORY: 'Campainha passiva',
          BUZZER_TONE: 'Tom PIN#%1 frequência%2',
@@ -693,6 +717,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Таймер',
+         KS_MILLIS: 'Время работы (миллисекунды)',
+         KS_MICROS: 'Время работы (микросекунды)',
 
          BUZZER_CATEGORY: 'Пассивный зуммер',
          BUZZER_TONE: 'Тон PIN#%1, частота%2',
@@ -773,6 +800,9 @@ function addMsg (Blockly) {
         KS_data: '%1',
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
         BUZZER_CATEGORY: '無源蜂鳴器',
         BUZZER_TONE: '播放聲音 引腳%1 頻率%2',
         BUZZER_TONE_D: '播放聲音 引腳%1 頻率%2 節拍%3',
@@ -852,6 +882,9 @@ function addMsg (Blockly) {
         KS_data: '%1',
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
         BUZZER_CATEGORY: '无源蜂鸣器',
         BUZZER_TONE: '播放声音 引脚%1 频率%2',
         BUZZER_TONE_D: '播放声音 引脚%1 频率%2 节拍%3',
@@ -931,6 +964,9 @@ function addMsg (Blockly) {
         KS_data: '%1', 
         KS_LOGIC_LABEL: 'Logica',
         KS_judge: '%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
         
         BUZZER_CATEGORY: 'Cicalino',
         BUZZER_TONE: 'Suona il cicalino su Pin %1 con frequenza %2',

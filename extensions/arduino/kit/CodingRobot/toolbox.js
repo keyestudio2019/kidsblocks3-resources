@@ -89,7 +89,12 @@ function addToolbox () {
     
 </category>
 
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="%{BKY_ROBOT_CATEGORY}" id="ROBOT_CATEGORY" colour="#0000ff" secondaryColour="#0000ff">
 
      <block type="robot_forward" id="robot_forward">

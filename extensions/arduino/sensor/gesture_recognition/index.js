@@ -7,7 +7,7 @@ const gesture_recognition = formatMessage => ({
     extensionId: 'gesture_recognition',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: [''],
+    supportDevice: ['arduinoEsp32S3'],
     author: 'keyes',
     iconURL: `asset/ges.jpg`,
     description: formatMessage({

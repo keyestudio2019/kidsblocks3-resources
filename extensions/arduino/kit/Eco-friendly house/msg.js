@@ -31,6 +31,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
         RELAY_CATEGORY: 'Relay',
         RELAY_STATE: 'Relay pin%1 out%2',
  
@@ -114,6 +117,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
         RELAY_CATEGORY: 'Relais',
         RELAY_STATE: 'Relais-Pin%1 aus%2',
 
@@ -197,6 +203,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
         RELAY_CATEGORY: 'Relé',
         RELAY_STATE: 'pin de relé%1 fuera%2',
 
@@ -208,7 +217,7 @@ function addMsg (Blockly) {
         BUTTON_CATEGORY: 'Botón',
         BUTTON_READ_STATE: '¿Se presionó el botón de la interfaz %1?',
         BUTTON_READ_VALUE: 'El valor de estado del botón en la interfaz %1',
-        PIR_CATEGORÍA: 'PIR',
+        PIR_CATEGORY: 'PIR',
         PIR_READ_VALUE: 'Interfaz de lectura %1 sensor de movimiento PIR',
         LIGHTSENSOR_CATEGORY: 'Luz',
         LIGHTSENSOR_READ_VALUE: 'leer el valor de la luz %1',
@@ -220,12 +229,12 @@ function addMsg (Blockly) {
         WATERSENSOR_READ_VALUE: 'Leer el valor del nivel de agua de la interfaz %1',
         SOILSENSOR_CATEGORY: 'Suelo',
         SOILSENSOR_READ_VALUE: 'leer el valor de la humedad del suelo%1',
-        DHT_CATEGORÍA: 'DHT11',
+        DHT_CATEGORY: 'DHT11',
         DHT_INIT: 'iniciar dht11 %1 pin %2 modo %3',
         DHT_READ_TEMPERATURE: 'dht11 %1 temperatura de lectura %2',
         DHT_READ_HUMIDITY: 'dht11 %1 lectura de humedad',
  
-        WS2812B_CATEGORÍA: 'LED RGB',
+        WS2812B_CATEGORY: 'LED RGB',
         WS2812B_INIT: 'pin %1 %2 LED RGB',
         WS2812B_SETBRIGHTNESS: 'pin %1 brillo LED %2',
         WS2812B_CLEAR: 'pin %1 borra todos los LED',
@@ -280,6 +289,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
          RELAY_CATEGORY: 'Relais',
          RELAY_STATE: 'broche relais%1 sortie%2',
     
@@ -363,6 +375,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
          RELAY_CATEGORY: 'リレー',
          RELAY_STATE: 'リレー ピン %1 出力 %2',
      
@@ -446,6 +461,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
          RELAY_CATEGORY: '릴레이',
          RELAY_STATE: '릴레이 핀%1 출력%2',
     
@@ -529,6 +547,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Czas działania (milisekundy)',
+        KS_MICROS: 'Czas działania (mikrosekundy)',
         RELAY_CATEGORY: 'Przekaźnik',
         RELAY_STATE: 'pin przekaźnika%1 out%2',
 
@@ -612,6 +633,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
          RELAY_CATEGORY: 'Relé',
          RELAY_STATE: 'relé pino%1 fora%2',
 
@@ -695,6 +719,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Таймер',
+         KS_MILLIS: 'Время работы (миллисекунды)',
+         KS_MICROS: 'Время работы (микросекунды)',
          RELAY_CATEGORY: 'Реле',
          RELAY_STATE: 'выход реле%1%2',
     
@@ -779,6 +806,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
         RELAY_CATEGORY: '繼電器',
         RELAY_STATE: '繼電器 接口%1 輸出%2 ',
     
@@ -863,6 +893,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
         RELAY_CATEGORY: '继电器',
         RELAY_STATE: '继电器 接口%1 输出%2 ',
       
@@ -944,6 +977,9 @@ function addMsg (Blockly) {
         KS_data: '%1', 
         KS_LOGIC_LABEL:'Logica',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
         RELAY_CATEGORY: 'Relè',
         RELAY_STATE: 'Relè Pin %1 Uscita %2',
         BUZZER_CATEGORY: 'Cicalino',

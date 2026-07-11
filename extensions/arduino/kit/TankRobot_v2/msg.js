@@ -31,6 +31,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
 
         ROBOT_CATEGORY: 'Run',
         ROBOT_FORWARD: 'Robot run forward,left motor speed %1 right motor speed %2',
@@ -95,6 +98,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
 
         ROBOT_CATEGORY: 'Fahrt',
         ROBOT_FORWARD: 'Roboter fährt vorwärts, linke Motor Geschwindigkeit %1 rechte Motor Geschwindigkeit %2',
@@ -159,6 +165,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
 
         ROBOT_CATEGORY: 'Paseo',
         ROBOT_FORWARD: 'Robot avanza, velocidad del motor izquierdo %1 velocidad del motor derecho %2',
@@ -223,6 +232,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
 
          ROBOT_CATEGORY:'Conduire',
          ROBOT_FORWARD: 'Robot avance, vitesse du moteur gauche %1 vitesse du moteur droit %2',
@@ -287,6 +299,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
 
          ROBOT_CATEGORY: 'ライド',
          ROBOT_FORWARD: 'ロボットが前進します、左モーターの速度 %1 右モーターの速度 %2',
@@ -351,6 +366,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
 
          ROBOT_CATEGORY: '라이드',
          ROBOT_FORWARD: '로봇이 앞으로 이동합니다, 왼쪽 모터 속도 %1 오른쪽 모터 속도 %2',
@@ -479,6 +497,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
 
          ROBOT_CATEGORY: "Passeio",
          ROBOT_FORWARD: 'Robô avança, velocidade do motor esquerdo %1 velocidade do motor direito %2',
@@ -543,6 +564,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Таймер',
+         KS_MILLIS: 'Время работы (миллисекунды)',
+         KS_MICROS: 'Время работы (микросекунды)',
 
          ROBOT_CATEGORY: 'Поездка',
          ROBOT_FORWARD: 'Робот движется вперед, скорость левого мотора %1 скорость правого мотора %2',
@@ -608,6 +632,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
         ROBOT_CATEGORY: '運動',
         ROBOT_FORWARD: '小車前進 左電機速度為 %1 右電機速度為 %2',
         ROBOT_BACK: '小車後退 左電機速度為 %1 右電機速度為 %2',
@@ -672,6 +699,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
         ROBOT_CATEGORY: '运动',
         ROBOT_FORWARD: '小车前进 左电机速度为%1 右电机速度为%2',
         ROBOT_BACK: '小车后退 左电机速度为%1 右电机速度为%2',
@@ -736,6 +766,9 @@ function addMsg (Blockly) {
     
         KS_LOGIC_LABEL: 'Logica',
         KS_judge: '%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
     
         ROBOT_CATEGORY: 'Movimento',
         ROBOT_FORWARD: 'Robot avanza, velocità del motore sinistro %1 velocità del motore destro %2',

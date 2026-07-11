@@ -31,7 +31,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
-
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
 
         MOTOR130_CATEGORY: 'Car run',
         MOTOR130_DIGITAL: 'Car State%1',
@@ -87,7 +89,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
-
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
 
         MOTOR130_CATEGORY: 'Auto fahren',
         MOTOR130_DIGITAL: 'Fahrzeugstatus%1',
@@ -142,7 +146,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judg:'%1 %2 %3',
-
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
 
         MOTOR130_CATEGORY: 'Coche en marcha',
         MOTOR130_DIGITAL: 'Estado del Auto%1',
@@ -150,7 +156,7 @@ function addMsg (Blockly) {
         LED_STATE: 'Luces del carro %1 estado%2',
         CAR_SERIAL_CATEGORY: 'Leer BLE',
         BLE_DATA: 'Serial readStringHasta #',
-        RGB6812_CATEGORÍA: 'NeoPixel RGB',
+        RGB6812_CATEGORY: 'NeoPixel RGB',
         RGB6812_INIT: 'iniciar RGB6812 PIN#%1 Tipo de enchufe%2 Recuento %3',
         RGB6812_DIS_RGB: 'RGB6812 PIN#%1 luces%2 color: R%3 G%4 B%5',
         RGB6812_BRIGHTNESS: 'RGB6812 PIN#%1 Brillo%2',
@@ -197,6 +203,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
 
 
          MOTOR130_CATEGORY: 'Voiture en marche',
@@ -252,7 +261,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
-
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
 
          MOTOR130_CATEGORY: '車の走行',
          MOTOR130_DIGITAL: '車の状態%1',
@@ -307,6 +318,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
 
 
          MOTOR130_CATEGORY: '카런',
@@ -362,6 +376,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Czas działania (milisekundy)',
+        KS_MICROS: 'Czas działania (mikrosekundy)',
 
 
         MOTOR130_CATEGORY: 'Przebieg samochodu',
@@ -417,7 +434,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
-
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
 
          MOTOR130_CATEGORY: 'Carro rodando',
          MOTOR130_DIGITAL: 'Estado do carro%1',
@@ -472,6 +491,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Таймер',
+         KS_MILLIS: 'Время работы (миллисекунды)',
+         KS_MICROS: 'Время работы (микросекунды)',
 
 
          MOTOR130_CATEGORY: 'Автомобиль работает',
@@ -528,6 +550,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
 
         MOTOR130_CATEGORY: '運動',
         MOTOR130_DIGITAL: '車 狀態#%1',
@@ -584,6 +609,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
 
         MOTOR130_CATEGORY: '运动',
         MOTOR130_DIGITAL: '麦轮车 状态#%1',
@@ -638,6 +666,9 @@ function addMsg (Blockly) {
         KS_data: "%1",
         KS_LOGIC_LABEL: 'Logica',
         KS_judge: '%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
         MOTOR130_CATEGORY: 'Movimento',
         MOTOR130_DIGITAL: 'Robot con ruote stato #%1',
         LED_CATEGORY: 'Luci del veicolo',

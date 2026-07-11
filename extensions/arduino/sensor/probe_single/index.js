@@ -5,7 +5,7 @@ const singleProbe = formatMessage => ({
     }),
     extensionId: 'singleProbe',
     version: '1.0.0',
-    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266','arduinoEsp32S3'],
     author: 'keyestudio',
     iconURL: `asset/singleProbe.jpg`,
     description: formatMessage({

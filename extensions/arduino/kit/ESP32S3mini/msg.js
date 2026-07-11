@@ -29,6 +29,9 @@ function addMsg (Blockly) {
         KS_data: '%1',
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
 
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 password:%2',
@@ -61,6 +64,9 @@ function addMsg (Blockly) {
         KS_data: '%1',
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
 
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 passwort:%2',
@@ -93,8 +99,11 @@ function addMsg (Blockly) {
         KS_data: '%1',
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
 
-        WIFI_CATEGORÍA: 'WIFI',
+        WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 contraseña:%2',
         WIFI_READ: 'Lectura WiFi',
     });
@@ -125,6 +134,9 @@ function addMsg (Blockly) {
          KS_data: '%1',
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
 
          WIFI_CATEGORY: 'WIFI',
          WIFI_INIT: 'ssid de connexion wifi:%1 mot de passe:%2',
@@ -157,6 +169,9 @@ function addMsg (Blockly) {
          KS_data: '%1',
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
 
          WIFI_CATEGORY: 'WIFI',
          WIFI_INIT: 'WiFi 接続 ssid:%1 パスワード:%2',
@@ -189,6 +204,9 @@ function addMsg (Blockly) {
          KS_data: '%1',
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
 
          WIFI_CATEGORY: '와이파이',
          WIFI_INIT: 'wifi 연결 ssid:%1 비밀번호:%2',
@@ -221,6 +239,9 @@ function addMsg (Blockly) {
         KS_data: '%1',
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Czas działania (milisekundy)',
+        KS_MICROS: 'Czas działania (mikrosekundy)',
 
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'identyfikator SSID połączenia Wi-Fi:%1 hasło:%2',
@@ -253,6 +274,9 @@ function addMsg (Blockly) {
          KS_data: '%1',
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
 
          WIFI_CATEGORY: 'WIFI',
          WIFI_INIT: 'wifi connect ssid:%1 senha:%2',
@@ -285,6 +309,9 @@ function addMsg (Blockly) {
          KS_data: '%1',
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Таймер',
+         KS_MILLIS: 'Время работы (миллисекунды)',
+         KS_MICROS: 'Время работы (микросекунды)',
 
          WIFI_CATEGORY: "WIFI",
          WIFI_INIT: 'ssid для подключения к Wi-Fi:%1, пароль:%2',
@@ -318,6 +345,9 @@ function addMsg (Blockly) {
         KS_data: '%1',
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
 
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: '連接WiFi 名稱%1 密碼%2',
@@ -351,6 +381,9 @@ function addMsg (Blockly) {
         KS_data: '%1',
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
 
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: '连接WiFi 名称%1 密码%2',
@@ -384,6 +417,9 @@ function addMsg (Blockly) {
         KS_data: '%1', 
         KS_LOGIC_LABEL:'Logica',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
 
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'Connetti WiFi nome%1 password%2',

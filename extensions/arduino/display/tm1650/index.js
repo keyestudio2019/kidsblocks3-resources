@@ -7,7 +7,7 @@ const tm1650 = formatMessage => ({
     }),
     extensionId: 'tm1650',
     version: '1.0.0',
-    supportDevice: [],
+    supportDevice: ['arduinoEsp32S3'],
     author: 'keyestudio',
     iconURL: `asset/tm1650.jpg`,
     description: formatMessage({

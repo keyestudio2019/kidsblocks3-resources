@@ -108,7 +108,12 @@ function addToolbox () {
     </block>
     
 </category>
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="%{BKY_BUZZER_CATEGORY}" id="BUZZER_CATEGORY" colour="#800080" secondaryColour="#800080">
     <block type="buzzer_tone_d" id="buzzer_tone_d">
         <field name="PIN">2</field>

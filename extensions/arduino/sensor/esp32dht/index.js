@@ -5,7 +5,7 @@ const esp32dht = formatMessage => ({
     }),
     extensionId: 'esp32dht',
     version: '1.0.0',
-    supportDevice: ['arduinoEsp32', 'arduinoEsp8266','arduinoEsp32S3'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp8266', 'arduinoEsp32S3'],
     author: 'keyes',
     iconURL: `asset/dht.jpg`,
     description: formatMessage({

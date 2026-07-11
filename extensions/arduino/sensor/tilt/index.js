@@ -5,7 +5,7 @@ const tilt = formatMessage => ({
     }),
     extensionId: 'tilt',
     version: '1.0.0',
-    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266','arduinoEsp32S3'],
     author: 'keyestudio',
     iconURL: `asset/tilt.jpg`,
     description: formatMessage({

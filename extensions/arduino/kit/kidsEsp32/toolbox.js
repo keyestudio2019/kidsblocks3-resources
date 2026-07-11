@@ -90,7 +90,12 @@ function addToolbox () {
     </block>
     
 </category>
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="%{BKY_OLED_CATEGORY}" id="OLED_CATEGORY" colour="#000099" secondaryColour="#A9A9A9">
     <block type="oled_init" id="oled_init">
         <value name="W">

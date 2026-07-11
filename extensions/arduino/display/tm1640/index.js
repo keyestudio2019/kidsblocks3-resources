@@ -5,7 +5,7 @@ const tm1640 = formatMessage => ({
     }),
     extensionId: 'tm1640',
     version: '1.0.0',
-    supportDevice: ['unoCore'],
+    supportDevice: ['unoCore','arduinoEsp32S3'],
     author: 'keyestudio',
     iconURL: `asset/tm1640.jpg`,
     description: formatMessage({

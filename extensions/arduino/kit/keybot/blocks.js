@@ -217,6 +217,24 @@ function addBlocks (Blockly) {
             });
         }
     };
+    Blockly.Blocks.KS_millis = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.KS_MILLIS,
+                colour: color2,
+                extensions: ['output_number']
+            });
+        }
+    };
+    Blockly.Blocks.KS_micros = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.KS_MICROS,
+                colour: color2,
+                extensions: ['output_number']
+            });
+        }
+    };
 
 //robot move
 
@@ -235,10 +253,13 @@ Blockly.Blocks.robot_forward = {
                     
             ],
             args1: [
-            
                 {
                     type: 'input_value',
-                    name: 'SPEED'
+                    name: 'SPEED_LEFT'
+                },
+                {
+                    type: 'input_value',
+                    name: 'SPEED_RIGHT'
                 }
             ],
             colour: color5,
@@ -261,10 +282,13 @@ Blockly.Blocks.robot_forward = {
                         
                 ],
                 args1: [
-                
                     {
                         type: 'input_value',
-                        name: 'SPEED'
+                        name: 'SPEED_LEFT'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'SPEED_RIGHT'
                     }
                 ],
                 colour: color5,
@@ -288,10 +312,13 @@ Blockly.Blocks.robot_forward = {
                         
                 ],
                 args1: [
-                
                     {
                         type: 'input_value',
-                        name: 'SPEED'
+                        name: 'SPEED_LEFT'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'SPEED_RIGHT'
                     }
                 ],
                 colour: color5,
@@ -315,10 +342,13 @@ Blockly.Blocks.robot_forward = {
                         
                 ],
                 args1: [
-                
                     {
                         type: 'input_value',
-                        name: 'SPEED'
+                        name: 'SPEED_LEFT'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'SPEED_RIGHT'
                     }
                 ],
                 colour: color5,

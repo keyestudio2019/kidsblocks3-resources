@@ -87,18 +87,33 @@ function addToolbox () {
     </block>
     
 </category>
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="%{BKY_ROBOT_CATEGORY}" id="ROBOT_CATEGORY" colour="#0000ff" secondaryColour="#0000ff">
 
      <block type="robot_forward" id="robot_forward">
-       <value name="SPEED">
+       <value name="SPEED_LEFT">
+         <shadow type="math_uint8_number">
+            <field name="NUM">200</field>
+        </shadow>
+      </value>
+      <value name="SPEED_RIGHT">
          <shadow type="math_uint8_number">
             <field name="NUM">200</field>
         </shadow>
       </value>
     </block>
     <block type="robot_back" id="robot_back">
-      <value name="SPEED">
+      <value name="SPEED_LEFT">
+       <shadow type="math_uint8_number">
+           <field name="NUM">200</field>
+       </shadow>
+      </value>
+      <value name="SPEED_RIGHT">
        <shadow type="math_uint8_number">
            <field name="NUM">200</field>
        </shadow>
@@ -106,7 +121,12 @@ function addToolbox () {
     </block>
 
     <block type="robot_left" id="robot_left">
-      <value name="SPEED">
+      <value name="SPEED_LEFT">
+        <shadow type="math_uint8_number">
+           <field name="NUM">200</field>
+        </shadow>
+      </value>
+      <value name="SPEED_RIGHT">
         <shadow type="math_uint8_number">
            <field name="NUM">200</field>
         </shadow>
@@ -114,7 +134,12 @@ function addToolbox () {
     </block>
 
   <block type="robot_right" id="robot_right">
-    <value name="SPEED">
+    <value name="SPEED_LEFT">
+      <shadow type="math_uint8_number">
+       <field name="NUM">200</field>
+      </shadow>
+    </value>
+    <value name="SPEED_RIGHT">
       <shadow type="math_uint8_number">
        <field name="NUM">200</field>
       </shadow>

@@ -6,7 +6,7 @@ const eightDigitDisplay = formatMessage => ({
     extensionId: 'eightDigitDisplay',
     version: '1.0.0',
    
-    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266','arduinoEsp32S3'],
     author: 'keyes',
     iconURL: `asset/eightDigitDisplay.jpg`,
     description: formatMessage({

@@ -89,7 +89,12 @@ function addToolbox () {
         </value>
     </block>   
 </category>
-
+<category name="%{BKY_KS_TIME_LABEL}" id="KS_TIME_LABEL" colour="#41be8a" secondaryColour="#41be8a">
+    <block type="KS_millis">
+    </block>
+    <block type="KS_micros">
+    </block>
+</category>
 <category name="%{BKY_FROG_CATEGORY}" id="FROG_CATEGORY" colour="#0B8CF5" secondaryColour="#0B8CF5">
 <block type="FROG_init">
 <value name="YL">

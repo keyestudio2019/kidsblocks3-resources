@@ -107,7 +107,14 @@ function addGenerator (Blockly) {
         return [`${val1} ${judge} ${val2}`, Blockly.Arduino.ORDER_ATOMIC];
     }; 
 
-    
+    Blockly.Arduino.KS_millis = function() {
+        var code = "millis()";
+        return [code, Blockly.Arduino.ORDER_ATOMIC];
+      };
+    Blockly.Arduino.KS_micros = function() {
+        var code = "micros()";
+        return [code, Blockly.Arduino.ORDER_ATOMIC];
+      };
 
 
     Blockly.Arduino.wifi_init = function (block) {

@@ -31,6 +31,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Runtime (milliseconds)',
+        KS_MICROS: 'Runtime (microseconds)',
 
         ROBOT_CATEGORY: 'Run',
         ROBOT_FORWARD: 'Robot run forward speed%1',
@@ -93,6 +96,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Laufzeit (Millisekunden)',
+        KS_MICROS: 'Laufzeit (Mikrosekunden)',
 
         ROBOT_CATEGORY: 'Fahrt',
         ROBOT_FORWARD: 'Roboter läuft vorwärts mit Geschwindigkeit %1',
@@ -155,6 +161,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'Temporizador',
+        KS_MILLIS: 'Tiempo de ejecución (milisegundos)',
+        KS_MICROS: 'Tiempo de ejecución (microsegundos)',
 
         ROBOT_CATEGORY: 'Paseo',
         ROBOT_FORWARD: 'Robot corre hacia adelante velocidad%1',
@@ -217,6 +226,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Minuteur',
+         KS_MILLIS: 'Durée de fonctionnement (millisecondes)',
+         KS_MICROS: 'Durée de fonctionnement (microsecondes)',
 
          ROBOT_CATEGORY:'Conduire',
          ROBOT_FORWARD: 'Vitesse d"avancement du robot%1',
@@ -279,6 +291,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'タイマー',
+         KS_MILLIS: '実行時間 (ミリ秒)',
+         KS_MICROS: '実行時間 (マイクロ秒)',
 
          ROBOT_CATEGORY: 'ライド',
          ROBOT_FORWARD: 'ロボットの前進速度%1',
@@ -341,6 +356,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'타이머',
+         KS_MILLIS: '실행 시간 (밀리초)',
+         KS_MICROS: '실행 시간 (마이크로초)',
 
          ROBOT_CATEGORY: '라이드',
          ROBOT_FORWARD: '로봇이 전진하는 속도%1',
@@ -403,6 +421,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Czas działania (milisekundy)',
+        KS_MICROS: 'Czas działania (mikrosekundy)',
 
         ROBOT_CATEGORY: 'Jazda',
         ROBOT_FORWARD: 'Prędkość pracy robota do przodu%1',
@@ -465,6 +486,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Temporizador',
+         KS_MILLIS: 'Tempo de execução (milissegundos)',
+         KS_MICROS: 'Tempo de execução (microssegundos)',
 
          ROBOT_CATEGORY: "Passeio",
          ROBOT_FORWARD: 'Velocidade de avanço do robô%1',
@@ -527,6 +551,9 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         KS_TIME_LABEL:'Таймер',
+         KS_MILLIS: 'Время работы (миллисекунды)',
+         KS_MICROS: 'Время работы (микросекунды)',
 
          ROBOT_CATEGORY: 'Поездка',
          ROBOT_FORWARD: 'Скорость движения робота вперед%1',
@@ -590,6 +617,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'計時器',
+        KS_MILLIS: '運行時間 (毫秒)',
+        KS_MICROS: '運行時間 (微秒)',
         ROBOT_CATEGORY: '運動',
         ROBOT_FORWARD: '小車前進 速度為%1',
         ROBOT_BACK: '小車後退 速度為%1',
@@ -652,6 +682,9 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        KS_TIME_LABEL:'计时器',
+        KS_MILLIS: '运行时间 (毫秒)',
+        KS_MICROS: '运行时间 (微秒)',
         ROBOT_CATEGORY: '运动',
         ROBOT_FORWARD: '小车前进 速度为%1',
         ROBOT_BACK: '小车后退 速度为%1',
@@ -714,6 +747,9 @@ function addMsg (Blockly) {
     
         KS_LOGIC_LABEL: 'Logica',
         KS_judge: '%1 %2 %3',
+        KS_TIME_LABEL:'Timer',
+        KS_MILLIS: 'Tempo di esecuzione (millisecondi)',
+        KS_MICROS: 'Tempo di esecuzione (microsecondi)',
     
         ROBOT_CATEGORY: 'Movimento',
         ROBOT_FORWARD: 'Veicolo avanti con velocità %1',
