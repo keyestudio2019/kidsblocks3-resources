@@ -5,7 +5,7 @@ const shiftDigitDisplay = formatMessage => ({
     }),
     extensionId: 'shiftDigitDisplay',
     version: '1.0.0',
-    supportDevice: ['arduinoEsp32S3'],
+    supportDevice: [''],
     // supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
     //     'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'keyes',

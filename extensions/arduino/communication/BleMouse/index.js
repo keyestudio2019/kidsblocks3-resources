@@ -5,7 +5,7 @@ const BleMouse = formatMessage => ({
     }),
     extensionId: 'BleMouse',
     version: '1.0.0',
-    supportDevice: ['arduinoEsp32','arduinoEsp32S3'],
+    supportDevice: ['arduinoEsp32'],
     author: 'keyes',
     iconURL: `asset/BleMouse.jpg`,
     description: formatMessage({

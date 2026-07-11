@@ -5,7 +5,7 @@ const ssd1306 = formatMessage => ({
     }),
     extensionId: 'ssd1306',
     version: '1.0.0',
-    supportDevice: ['unoCore','unoStart','arduinoEsp32S3'],
+    supportDevice: ['unoCore','unoStart'],
     author: 'keyestudio',
     iconURL: `asset/ssd1306.jpg`,
     description: formatMessage({

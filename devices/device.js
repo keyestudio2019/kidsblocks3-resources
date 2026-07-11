@@ -27,7 +27,6 @@ module.exports = [
     'makeyMakey',
     
    // robot
-   'keyesRobot_arduinoUno',
    'AIbot_arduinoEsp32S3',
    'TankRobotv2_arduinoUno',
    'FrogRobot_arduinoUno',

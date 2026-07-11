@@ -125,15 +125,7 @@ function addBlocks (Blockly) {
                                  [Blockly.Msg.OPEN_WINDOW, "57"],
                                  [Blockly.Msg.CLOSE_WINDOW, "58"],
                                  [Blockly.Msg.OPEN_DOOR, "59"],
-                                 [Blockly.Msg.CLOSE_DOOR, "60"],
-                                 [Blockly.Msg.FLAG_UP, "61"],
-                                 [Blockly.Msg.FLAG_DOWN, "62"],
-                                 [Blockly.Msg.CURTAIN_ON, "63"],
-                                 [Blockly.Msg.CURTAIN_OFF, "64"],
-                                 [Blockly.Msg.CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE, "65"],
-                                 [Blockly.Msg.CURRENT_CARBON_DIOXIDE_CONCENTRATE, "66"],
-                                 [Blockly.Msg.CURRENT_AIR_QUALITY_INDEX, "67"],
-                                 [Blockly.Msg.Approach_Alar, "68"]
+                                 [Blockly.Msg.CLOSE_DOOR, "60"]
                              ]
                     }
                 ],
@@ -248,9 +240,6 @@ function addBlocks (Blockly) {
                             [Blockly.Msg.CENTIMETERS, "16"],
                             [Blockly.Msg.METERS, "17"],
                             [Blockly.Msg.KILOMETERS, "18"],
-                            [Blockly.Msg.CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION, "19"],
-                            [Blockly.Msg.CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION, "20"],
-                            [Blockly.Msg.CURRENT_AIR_QUALITY_INDEX_IS, "21"],
                         ]
                     }
                 ],

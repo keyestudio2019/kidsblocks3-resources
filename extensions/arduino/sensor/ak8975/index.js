@@ -7,7 +7,7 @@ const ak8975 = formatMessage => ({
     extensionId: 'ak8975',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266','arduinoEsp32S3'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
     author: 'kidsbits',
     iconURL: `asset/ak8975.jpg`,
     description: formatMessage({

@@ -6,7 +6,7 @@ const BEMFA = formatMessage => ({
     }),
     extensionId: 'BEMFA',
     version: '1.0.0',
-    supportDevice: ['arduinoEsp32', 'arduinoEsp8266', 'arduinoEsp32S3'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/BEMFA.jpg`,
     description: formatMessage({

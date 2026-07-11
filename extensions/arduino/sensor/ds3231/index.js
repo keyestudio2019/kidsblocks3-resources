@@ -7,7 +7,7 @@ const ds3231 = formatMessage => ({
     extensionId: 'ds3231',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32S3'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
     iconURL: `asset/ds3231.jpg`,
     description: formatMessage({

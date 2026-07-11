@@ -5,7 +5,7 @@ const Sengo2 = formatMessage => ({
     }),
     extensionId: 'Sengo2',
     version: '0.1.2',
-    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp32S3'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32'],
     author: 'keyes',
     iconURL: `assets/sengo2.jpg`,
     description: formatMessage({

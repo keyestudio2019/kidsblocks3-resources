@@ -7,7 +7,7 @@ const ESP32_servo270 = formatMessage => ({
     extensionId: 'ESP32_servo270',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoEsp32', 'arduinoEsp8266', 'arduinoEsp32S3'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/servo.jpg`,
     description: formatMessage({

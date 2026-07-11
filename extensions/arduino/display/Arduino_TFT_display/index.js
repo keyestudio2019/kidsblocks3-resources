@@ -7,7 +7,7 @@ const Arduino_TFT = formatMessage => ({
     extensionId: 'arduinoArduino_TFT',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32S3'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
     iconURL: `asset/Arduino_TFT.png`,
     description: formatMessage({

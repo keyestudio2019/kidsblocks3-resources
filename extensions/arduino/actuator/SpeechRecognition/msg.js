@@ -71,14 +71,6 @@ function addMsg (Blockly) {
         CLOSE_WINDOW: 'Close the window',
         OPEN_DOOR: 'Open the door',
         CLOSE_DOOR: 'Close the door',
-        FLAG_UP: 'Raise the flag',
-        FLAG_DOWN: 'Fall the flag',
-        CURTAIN_ON: 'Open the curtain',
-        CURTAIN_OFF: 'Close the curtain',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: 'What is the current total concentration of volatile organic compounds?',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: 'What is the current concentration of carbon dioxide?',
-        CURRENT_AIR_QUALITY_INDEX: 'What is the current air quality index?',
-        Approach_Alar: 'If someone approaches, please sound the alarm',
 
         CURRENT_TEMPERATURE_IS: 'current temperature is',
         DEGREES: 'degrees',
@@ -98,9 +90,7 @@ function addMsg (Blockly) {
         CENTIMETERS: 'centimeters',
         METERS: 'meters',
         KILOMETERS: 'kilometers',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: 'current total volatile organic compound concentration is parts per billion',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: 'current concentration of carbon dioxide is parts per million',
-        CURRENT_AIR_QUALITY_INDEX_IS: 'current air quality index is',
+
     });
     Object.assign(Blockly.ScratchMsgs.locales['de'], {
         SPEECH_RECOGNITION: 'Spracherkennung',
@@ -172,15 +162,7 @@ function addMsg (Blockly) {
         CLOSE_WINDOW: 'Schließe das Fenster',
         OPEN_DOOR: 'Öffne die Tür',
         CLOSE_DOOR: 'Schließe die Tür',
-        FLAG_UP: 'Flagge hissen',
-        FLAG_DOWN: 'Flagge einholen',
-        CURTAIN_ON: 'Die Vorhänge öffnen',
-        CURTAIN_OFF: 'Die Gardine zuziehen',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: 'Wie hoch ist die aktuelle Gesamtkonzentration flüchtiger organischer Verbindungen?',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: 'Wie hoch ist die aktuelle Kohlendioxidkonzentration?',
-        CURRENT_AIR_QUALITY_INDEX: 'Wie hoch ist der aktuelle Luftqualitätsindex?',
 
-        Approach_Alar: 'Wenn sich jemand nähert, bitte Alarm auslösen',
         CURRENT_TEMPERATURE_IS: 'Aktuelle Temperatur beträgt',
         DEGREES: 'Grad',
         CURRENT_RAINFALL_PERCENTAGE: 'Aktueller Niederschlag beträgt Prozent',
@@ -199,9 +181,6 @@ function addMsg (Blockly) {
         CENTIMETERS: 'Zentimeter',
         METERS: 'Meter',
         KILOMETERS: 'Kilometer',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: 'Aktuelle Konzentration der gesamten flüchtigen organischen Verbindungen beträgt Teile pro Milliarde',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: 'Aktuelle Kohlenstoffdioxid-Konzentration beträgt Teile pro Million',
-        CURRENT_AIR_QUALITY_INDEX_IS: 'Aktuelle Luftqualitätsindex beträgt',
     });
     Object.assign(Blockly.ScratchMsgs.locales['es'], {
         SPEECH_RECOGNITION: 'Reconocimiento de Voz',
@@ -273,15 +252,7 @@ function addMsg (Blockly) {
         CLOSE_WINDOW: 'Cerrar la ventana',
         OPEN_DOOR: 'Abrir la puerta',
         CLOSE_DOOR: 'Cerrar la puerta',
-        FLAG_UP: 'Izar la bandera',
-        FLAG_DOWN: 'Arriar la bandera',
-        CURTAIN_ON: 'Abre la cortina',
-        CURTAIN_OFF: 'Cierra la cortina',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: '¿Cuál es la concentración actual de compuestos orgánicos volátiles totales?',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: '¿Cuál es la concentración actual de dióxido de carbono?',
-        CURRENT_AIR_QUALITY_INDEX: '¿Cuál es el índice de calidad del aire actual?',
 
-        Approach_Alar: 'Si alguien se acerca, por favor suene la alarma',
         CURRENT_TEMPERATURE_IS: 'La temperatura actual es',
         DEGREES: 'grados',
         CURRENT_RAINFALL_PERCENTAGE: 'La cantidad de lluvia actual es de porcentaje',
@@ -300,9 +271,6 @@ function addMsg (Blockly) {
         CENTIMETERS: 'centímetros',
         METERS: 'metros',
         KILOMETERS: 'kilómetros',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: 'La concentración actual de compuestos orgánicos volátiles totales es de partes por mil millones',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: 'La concentración actual de dióxido de carbono es de partes por millón',
-        CURRENT_AIR_QUALITY_INDEX_IS: 'El índice de calidad del aire actual es de',
     });
     Object.assign(Blockly.ScratchMsgs.locales['fr'], {
         SPEECH_RECOGNITION: 'Reconnaissance Vocale',
@@ -374,15 +342,7 @@ function addMsg (Blockly) {
         CLOSE_WINDOW: 'Fermer la fenêtre',
         OPEN_DOOR: 'Ouvrir la porte',
         CLOSE_DOOR: 'Fermer la porte',
-        FLAG_UP: 'hisser la drapeau',
-        FLAG_DOWN: 'ammener la drapeau',
-        CURTAIN_ON: 'ouvrir la rideau',
-        CURTAIN_OFF: 'fermer la rideau',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: 'Quelle est la concentration actuelle de composés organiques volatils totaux?',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: 'Quelle est la concentration actuelle de dioxyde de carbone ?',
-        CURRENT_AIR_QUALITY_INDEX: 'Quel est l’indice actuel de la qualité de l’air ?',
 
-        Approach_Alar: "Si quelqu'un s'approche, veuillez déclencher l'alarme",
         CURRENT_TEMPERATURE_IS: 'La température actuelle est',
         DEGREES: 'degrés',
         CURRENT_RAINFALL_PERCENTAGE: 'La quantité de pluie actuelle est de pour cent',
@@ -401,9 +361,6 @@ function addMsg (Blockly) {
         CENTIMETERS: 'centimètres',
         METERS: 'mètres',
         KILOMETERS: 'kilomètres',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: 'La concentration actuelle de composés organiques volatils totaux est de parties par milliard',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: 'La concentration actuelle de dioxyde de carbone est de parties par million',
-        CURRENT_AIR_QUALITY_INDEX_IS: 'L’indice actuel de la qualité de l’air est de',
     });
 Object.assign(Blockly.ScratchMsgs.locales['ja'], {
         SPEECH_RECOGNITION: '音声認識',
@@ -475,15 +432,7 @@ Object.assign(Blockly.ScratchMsgs.locales['ja'], {
         CLOSE_WINDOW: '窓を閉める',
         OPEN_DOOR: 'ドアを開ける',
         CLOSE_DOOR: 'ドアを閉める',
-        FLAG_UP: '国旗を掲げる',
-        FLAG_DOWN: '国旗を降ろす',
-        CURTAIN_ON: 'カーテンを開ける',
-        CURTAIN_OFF: 'カーテンを閉める',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: '現在の総揮発性有機化合物濃度はどのくらいですか?',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: '現在の二酸化炭素濃度はどのくらいですか?',
-        CURRENT_AIR_QUALITY_INDEX: '現在の大気品質指数はどのくらいですか?',
 
-        Approach_Alar: '誰かが近づいたら警報を鳴らしてください',
         CURRENT_TEMPERATURE_IS: '現在の温度は',
         DEGREES: '度',
         CURRENT_RAINFALL_PERCENTAGE: '現在の降雨量はパーセント',
@@ -502,9 +451,6 @@ Object.assign(Blockly.ScratchMsgs.locales['ja'], {
         CENTIMETERS: 'センチメートル',
         METERS: 'メートル',
         KILOMETERS: 'キロメートル',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: '現在の総揮発性有機化合物濃度は十億分の1です',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: '現在の二酸化炭素濃度は百万分の1です',
-        CURRENT_AIR_QUALITY_INDEX_IS: '現在の大気品質指数は X です',
     });
 Object.assign(Blockly.ScratchMsgs.locales['ko'], {
         SPEECH_RECOGNITION: '음성 인식',
@@ -576,15 +522,7 @@ Object.assign(Blockly.ScratchMsgs.locales['ko'], {
         CLOSE_WINDOW: '창문을 닫다',
         OPEN_DOOR: '문을 열다',
         CLOSE_DOOR: '문을 닫다',
-        FLAG_UP: '국기를 올리다',
-        FLAG_DOWN: '국기를 내리다',
-        CURTAIN_ON: '커튼을 열다',
-        CURTAIN_OFF: '커튼을 닫다',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: '현재 총휘발성유기화합물 농도는 얼마입니까?',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: '현재 이산화탄소 농도는 얼마입니까?',
-        CURRENT_AIR_QUALITY_INDEX: '현재 대기질 지수는 얼마입니까?',
 
-        Approach_Alar: '누군가 접근하면 경보를 울려주세요',
         CURRENT_TEMPERATURE_IS: '현재 온도는',
         DEGREES: '도',
         CURRENT_RAINFALL_PERCENTAGE: '현재 강우량은 퍼센트',
@@ -603,9 +541,6 @@ Object.assign(Blockly.ScratchMsgs.locales['ko'], {
         CENTIMETERS: '센티미터',
         METERS: '미터',
         KILOMETERS: '킬로미터',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: '현재 총휘발성유기화합물 농도는 십억분의 1입니다',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: '현재 이산화탄소 농도는 백만분의 1입니다',
-        CURRENT_AIR_QUALITY_INDEX_IS: '현재 대기질 지수는 입니다',
     });
 Object.assign(Blockly.ScratchMsgs.locales['pl'], {
         SPEECH_RECOGNITION: 'Rozpoznawanie mowy',
@@ -677,15 +612,7 @@ Object.assign(Blockly.ScratchMsgs.locales['pl'], {
         CLOSE_WINDOW: 'Zamknij okno',
         OPEN_DOOR: 'Otwórz drzwi',
         CLOSE_DOOR: 'Zamknij drzwi',
-        FLAG_UP: 'Podnieść flagę',
-        FLAG_DOWN: 'Opuścić flagę',
-        CURTAIN_ON: 'Otworzyć zasłonę',
-        CURTAIN_OFF: 'Zamknąć zasłonę',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: 'Jakie jest obecne stężenie całkowitych lotnych związków organicznych?',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: 'Jakie jest obecne stężenie dwutlenku węgla?',
-        CURRENT_AIR_QUALITY_INDEX: 'Jaki jest obecny wskaźnik jakości powietrza?',
 
-        Approach_Alar: 'Jeśli ktoś się zbliża, proszę uruchomić alarm',
         CURRENT_TEMPERATURE_IS: 'Aktualna temperatura to',
         DEGREES: 'stopnie',
         CURRENT_RAINFALL_PERCENTAGE: 'Aktualna ilość opadów to procent',
@@ -704,9 +631,6 @@ Object.assign(Blockly.ScratchMsgs.locales['pl'], {
         CENTIMETERS: 'centymetry',
         METERS: 'metry',
         KILOMETERS: 'kilometry',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: 'Obecne stężenie całkowitych lotnych związków organicznych wynosi części na miliard',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: 'Obecne stężenie dwutlenku węgla wynosi X części na milion',
-        CURRENT_AIR_QUALITY_INDEX_IS: 'Obecny wskaźnik jakości powietrza wynosi',
     });
 Object.assign(Blockly.ScratchMsgs.locales['pt'], {
         SPEECH_RECOGNITION: 'Reconhecimento de Fala',
@@ -778,15 +702,7 @@ Object.assign(Blockly.ScratchMsgs.locales['pt'], {
         CLOSE_WINDOW: 'Fechar a janela',
         OPEN_DOOR: 'Abrir a porta',
         CLOSE_DOOR: 'Fechar a porta',
-        FLAG_UP: 'Hastear a bandeira',
-        FLAG_DOWN: 'Arriar a bandeira',
-        CURTAIN_ON: 'Abrir a cortina',
-        CURTAIN_OFF: 'Fechar a cortina',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: 'Qual é a concentração atual de compostos orgânicos voláteis totais?',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: 'Qual é a concentração atual de dióxido de carbono?',
-        CURRENT_AIR_QUALITY_INDEX: 'Qual é o índice atual de qualidade do ar?',
 
-        Approach_Alar: 'Se alguém se aproximar, por favor acione o alarme',
         CURRENT_TEMPERATURE_IS: 'A temperatura atual é',
         DEGREES: 'graus',
         CURRENT_RAINFALL_PERCENTAGE: 'A quantidade de chuva atual é de porcentagem',
@@ -805,9 +721,6 @@ Object.assign(Blockly.ScratchMsgs.locales['pt'], {
         CENTIMETERS: 'centímetros',
         METERS: 'metros',
         KILOMETERS: 'quilômetros',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: 'A concentração atual de compostos orgânicos voláteis totais é de partes por bilhão',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: 'A concentração atual de dióxido de carbono é de partes por milhão',
-        CURRENT_AIR_QUALITY_INDEX_IS: 'O índice atual de qualidade do ar é',
     });
 Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         SPEECH_RECOGNITION: 'Распознавание речи',
@@ -879,15 +792,7 @@ Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         CLOSE_WINDOW: 'Закрыть окно',
         OPEN_DOOR: 'Открыть дверь',
         CLOSE_DOOR: 'Закрыть дверь',
-        FLAG_UP: 'Nодъём флага',
-        FLAG_DOWN: 'Cпуск флага',
-        CURTAIN_ON: 'Oткрыть штору',
-        CURTAIN_OFF: 'Закрой штору',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: 'Какова текущая концентрация летучих органических соединений?',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: 'Какова текущая концентрация углекислого газа?',
-        CURRENT_AIR_QUALITY_INDEX: 'Каков текущий индекс качества воздуха?',
 
-        Approach_Alar: 'Если кто-то приближается, пожалуйста, включите сигнализацию',
         CURRENT_TEMPERATURE_IS: 'Текущая температура составляет',
         DEGREES: 'градусов',
         CURRENT_RAINFALL_PERCENTAGE: 'Текущее количество осадков составляет процентов',
@@ -906,9 +811,6 @@ Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         CENTIMETERS: 'сантиметров',
         METERS: 'метров',
         KILOMETERS: 'километров',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: 'Текущая концентрация летучих органических соединений (ЛОС) составляет частей на миллиард',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: 'Текущая концентрация углекислого газа составляет частей на миллион',
-        CURRENT_AIR_QUALITY_INDEX_IS: 'Текущий индекс качества воздуха составляет',
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-tw'], {
         SPEECH_RECOGNITION: '語音識別',
@@ -980,15 +882,7 @@ Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         CLOSE_WINDOW: '關閉窗户',
         OPEN_DOOR: '打開門',
         CLOSE_DOOR: '關閉門',
-        FLAG_UP: '升旗',
-        FLAG_DOWN: '降旗',
-        CURTAIN_ON: '拉開窗簾',
-        CURTAIN_OFF: '關閉窗簾',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: '當前總揮發性有機物濃度是多少',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: '當前二氧化碳濃度是多少',
-        CURRENT_AIR_QUALITY_INDEX: '當前空氣質量指數是多少',
 
-        Approach_Alar: '有人靠近請發出警報',
         CURRENT_TEMPERATURE_IS: '當前溫度為',
         DEGREES: '度',
         CURRENT_RAINFALL_PERCENTAGE: '當前雨水量為百分之',
@@ -1007,9 +901,6 @@ Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         CENTIMETERS: '厘米',
         METERS: '米',
         KILOMETERS: '千米',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: '當前總揮發性有機物濃度為十億分之',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: '當前二氧化碳濃度為百萬分之',
-        CURRENT_AIR_QUALITY_INDEX_IS: '當前空氣質量指數為',
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         SPEECH_RECOGNITION: '语音识别',
@@ -1081,14 +972,6 @@ Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         CLOSE_WINDOW: '关闭窗户',
         OPEN_DOOR: '打开门',
         CLOSE_DOOR: '关闭门',
-        FLAG_UP: '升旗',
-        FLAG_DOWN: '降旗',
-        CURTAIN_ON: '拉开窗帘',
-        CURTAIN_OFF: '关闭窗帘',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: '当前总挥发性有机物浓度是多少',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: '当前二氧化碳浓度是多少',
-        CURRENT_AIR_QUALITY_INDEX: '当前空气质量指数是多少',
-        Approach_Alar: '有人靠近请发出警报',
 
         CURRENT_TEMPERATURE_IS: '当前温度为',
         DEGREES: '度',
@@ -1108,10 +991,6 @@ Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         CENTIMETERS: '厘米',
         METERS: '米',
         KILOMETERS: '千米',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: '当前总挥发性有机物浓度为十亿分之',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: '当前二氧化碳浓度为百万分之',
-        CURRENT_AIR_QUALITY_INDEX_IS: '当前空气质量指数为',
-
     });
     Object.assign(Blockly.ScratchMsgs.locales['it'], {
         SPEECH_RECOGNITION: 'Riconoscimento Vocale',
@@ -1183,15 +1062,7 @@ Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         CLOSE_WINDOW: 'Chiudi la finestra',
         OPEN_DOOR: 'Apri la porta',
         CLOSE_DOOR: 'Chiudi la porta',
-        FLAG_UP: 'Issare la bandiera',
-        FLAG_DOWN: 'Ammainare la bandiera',
-        CURTAIN_ON: 'Aprire la tenda',
-        CURTAIN_OFF: 'Chiudere la tenda',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE: 'Qual è l’attuale concentrazione di composti organici volatili totali?',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE: 'Qual è l’attuale concentrazione di anidride carbonica?',
-        CURRENT_AIR_QUALITY_INDEX: 'Qual è l’indice di qualità dell’aria attuale?',
 
-        Approach_Alar: 'Se qualcuno si avvicina, si prega di attivare l\'allarme',
         CURRENT_TEMPERATURE_IS: 'La temperatura attuale è',
         DEGREES: 'gradi',
         CURRENT_RAINFALL_PERCENTAGE: 'La quantità di pioggia attuale è percento',
@@ -1210,9 +1081,6 @@ Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         CENTIMETERS: 'centimetri',
         METERS: 'metri',
         KILOMETERS: 'chilometri',
-        CURRENT_TOTAL_VOLATILE_ORGANIC_COMPOUND_CONCENTRATE_PARTS_PER_BILLION: 'L’attuale concentrazione di composti organici volatili totali è di parti per miliardo',
-        CURRENT_CARBON_DIOXIDE_CONCENTRATE_PARTS_PER_MILLION: 'L’attuale concentrazione di anidride carbonica è di parti per milione',
-        CURRENT_AIR_QUALITY_INDEX_IS: 'L’indice di qualità dell’aria attuale è di',
     });
     return Blockly;
 }

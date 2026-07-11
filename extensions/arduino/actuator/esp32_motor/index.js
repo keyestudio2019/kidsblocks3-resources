@@ -7,7 +7,7 @@ const esp32motor = formatMessage => ({
     extensionId: 'esp32motor',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoEsp32', 'arduinoEsp8266', 'arduinoEsp32S3'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/motor130.jpg`,
     description: formatMessage({

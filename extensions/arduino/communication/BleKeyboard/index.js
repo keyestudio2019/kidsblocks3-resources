@@ -5,7 +5,7 @@ const BleKeyboard = formatMessage => ({
     }),
     extensionId: 'BleKeyboard',
     version: '1.0.0',
-    supportDevice: ['arduinoEsp32','arduinoEsp32S3'],
+    supportDevice: ['arduinoEsp32'],
     author: 'keyes',
     iconURL: `asset/BleKeyboard.jpg`,
     description: formatMessage({

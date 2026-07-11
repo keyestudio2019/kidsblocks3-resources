@@ -7,7 +7,7 @@ const one_tube = formatMessage => ({
     extensionId: 'one_tube',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266','arduinoEsp32S3'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/one_tube.jpg`,
     description: formatMessage({

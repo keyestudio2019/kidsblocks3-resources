@@ -96,24 +96,14 @@ function addToolbox () {
 <category name="%{BKY_ROBOT_CATEGORY}" id="ROBOT_CATEGORY" colour="#0000ff" secondaryColour="#0000ff">
 
      <block type="robot_forward" id="robot_forward">
-       <value name="SPEED_LEFT">
-         <shadow type="math_uint8_number">
-            <field name="NUM">200</field>
-        </shadow>
-      </value>
-      <value name="SPEED_RIGHT">
+       <value name="SPEED">
          <shadow type="math_uint8_number">
             <field name="NUM">200</field>
         </shadow>
       </value>
     </block>
     <block type="robot_back" id="robot_back">
-      <value name="SPEED_LEFT">
-       <shadow type="math_uint8_number">
-           <field name="NUM">200</field>
-       </shadow>
-      </value>
-      <value name="SPEED_RIGHT">
+      <value name="SPEED">
        <shadow type="math_uint8_number">
            <field name="NUM">200</field>
        </shadow>
@@ -121,12 +111,7 @@ function addToolbox () {
     </block>
 
     <block type="robot_left" id="robot_left">
-      <value name="SPEED_LEFT">
-        <shadow type="math_uint8_number">
-           <field name="NUM">200</field>
-        </shadow>
-      </value>
-      <value name="SPEED_RIGHT">
+      <value name="SPEED">
         <shadow type="math_uint8_number">
            <field name="NUM">200</field>
         </shadow>
@@ -134,12 +119,7 @@ function addToolbox () {
     </block>
 
   <block type="robot_right" id="robot_right">
-    <value name="SPEED_LEFT">
-      <shadow type="math_uint8_number">
-       <field name="NUM">200</field>
-      </shadow>
-    </value>
-    <value name="SPEED_RIGHT">
+    <value name="SPEED">
       <shadow type="math_uint8_number">
        <field name="NUM">200</field>
       </shadow>
