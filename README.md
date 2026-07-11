@@ -1,4 +1,19 @@
+
+V1.7.8:
+
+Add AIBOT AI chatbot<br>
+Add AI control for LEDs<br>
+Add AI control motors <br>
+Add AI control servos<br>
+Add AI control temperature and humidity sensors<br>
+Add AI control light sensors<br>
+Add AI control ultrasonic sensors<br>
+Add AI control smart cars.
+
+
+
 V1.7.7:
+
 Add soil sensor <br>
 Add water level sensor
 
