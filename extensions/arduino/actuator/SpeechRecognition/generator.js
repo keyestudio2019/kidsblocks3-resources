@@ -35,6 +35,9 @@ function addGenerator (Blockly) {
         Blockly.Arduino.definitions_['var_yuyin22'] = '#define U_MSG_bobao16      18';
         Blockly.Arduino.definitions_['var_yuyin23'] = '#define U_MSG_bobao17      19';
         Blockly.Arduino.definitions_['var_yuyin24'] = '#define U_MSG_bobao18      20';
+        Blockly.Arduino.definitions_['var_yuyin25'] = '#define U_MSG_bobao19      21';
+        Blockly.Arduino.definitions_['var_yuyin26'] = '#define U_MSG_bobao20      22';
+        Blockly.Arduino.definitions_['var_yuyin27'] = '#define U_MSG_bobao21      23';
 
         Blockly.Arduino.definitions_['var_tishi3'] = '//Serial Port Message Parameter Type';
         Blockly.Arduino.definitions_['var_def1'] = 'typedef union {\n'

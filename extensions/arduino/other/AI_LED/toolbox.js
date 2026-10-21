@@ -68,6 +68,7 @@ function addToolbox() {
     </block>
 
     <block type="LED_setLEDState" id="LED_setLEDState">
+    <field name="device">led</field>
     <field name="pin">1</field>
     </block>
 

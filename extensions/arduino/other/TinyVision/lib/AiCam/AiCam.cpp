@@ -72,6 +72,8 @@ void AiCam::setAiCamMode(String cmd) {
     sendToEsp(F("MODE:QR"));
   } else if (lower == "card") {
     sendToEsp(F("MODE:CARD"));
+  } else if (lower == "line") {
+    sendToEsp(F("MODE:LINE"));
   } else {
     Serial.print(F("Unknown local command: "));
     Serial.println(cmd);
@@ -97,7 +99,9 @@ void AiCam::updateEspData(const String &mode, const String &data) {
     if (comma != -1) {
       _data.faceX = data.substring(0, comma).toInt();
       _data.faceY = data.substring(comma + 1).toInt();
-      _data.faceValid = true;
+	  if (_data.faceX > 1){
+		  _data.faceValid = true;
+	  }else _data.faceValid = false;
     }
   } else if (mode.equalsIgnoreCase("COLOR")) {
     _data.color = data;
@@ -108,6 +112,22 @@ void AiCam::updateEspData(const String &mode, const String &data) {
   } else if (mode.equalsIgnoreCase("CARD")) {
     _data.card = data;
     _data.cardValid = true;
+  } else if (mode.equalsIgnoreCase("LINE")) {
+    int firstComma = data.indexOf(',');
+    if (firstComma != -1) {
+        int secondComma = data.indexOf(',', firstComma + 1);
+        if (secondComma != -1) {
+            _data.lineOffset = data.substring(0, firstComma).toInt();
+            _data.lineAngle  = data.substring(firstComma + 1, secondComma).toInt();
+            _data.lineValid  = data.substring(secondComma + 1).toInt();
+        } else {
+            // 如果只有两个字段，可以按需处理，或打印错误
+            Serial.println(F("LINE data missing third field"));
+        }
+    }
+  } else {
+    Serial.print(F("Unknown local command:"));
+    Serial.println(mode);
   }
 }
 
@@ -156,3 +176,7 @@ String AiCam::getColor()  { return _data.color; }
 String AiCam::getQrCode() { return _data.qr; }
 String AiCam::getCard()   { return _data.card; }
 bool AiCam::isFaceValid() { return _data.faceValid; }
+int AiCam::getLineValid() { return _data.lineValid; }
+int AiCam::getLineOffset() { return _data.lineOffset; }
+int AiCam::getLineAngle() { return _data.lineAngle; }
+

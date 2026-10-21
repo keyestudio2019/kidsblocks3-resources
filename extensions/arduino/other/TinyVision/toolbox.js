@@ -7,7 +7,6 @@ function addToolbox () {
     <block type="tinyvision_init" id="tinyvision_init">
         <field name="RX">2</field>
         <field name="TX">3</field>
-        <field name="BAUD">115200</field>
     </block>
     <block type="tinyvision_set_mode" id="tinyvision_set_mode">
         <field name="MODE">face</field>
@@ -26,10 +25,16 @@ function addToolbox () {
     </block>
     <block type="tinyvision_get_qrcode" id="tinyvision_get_qrcode">
     </block>
+    <block type="tinyvision_is_qrcode_content" id="tinyvision_is_qrcode_content">
+        <field name="QRCODE_CONTENT">red</field>
+    </block>
     <block type="tinyvision_get_card" id="tinyvision_get_card">
     </block>
     <block type="tinyvision_is_card" id="tinyvision_is_card">
         <field name="CARD">STRAIGHT</field>
+    </block>
+    <block type="tinyvision_get_line_value" id="tinyvision_get_line_value">
+        <field name="VALUE">Offset</field>
     </block>
 </category>    `;
 }

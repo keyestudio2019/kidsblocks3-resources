@@ -172,14 +172,12 @@ function addGenerator(Blockly) {
       return code;
   };
 
-  Blockly.Arduino.LED_setLEDState = function (block) {
-    //const pin = Blockly.Arduino.valueToCode(block, 'pin', Blockly.Arduino.ORDER_ATOMIC);
+    Blockly.Arduino.LED_setLEDState = function (block) {
+    const device = block.getFieldValue('device') || 'led';
     const pin = block.getFieldValue('pin');
-    const state = this.getFieldValue('state');
-
-    Blockly.Arduino.setups_.Led_init = `pinMode(${pin}, OUTPUT);`;
-
-    return `digitalWrite(${pin}, ${state});\n`;
+    const state = block.getFieldValue('state');
+    Blockly.Arduino.setups_[`DigitalOutput_init_${pin}`] = `pinMode(${pin}, OUTPUT);`;
+    return `// Output device: ${device}\ndigitalWrite(${pin}, ${state});\n`;
 };
 
   return Blockly;

@@ -7,7 +7,7 @@ const camController = formatMessage => ({
     extensionId: 'camController',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMega2560', 'arduinoEsp32', 'arduinoRaspberryPiPico', 'arduinoEsp32S3'],
+    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMega2560', 'arduinoEsp32', 'arduinoRaspberryPiPico'],
     author: 'kidsbits',
     iconURL: 'asset/cam_controller.jpg',
     description: formatMessage({

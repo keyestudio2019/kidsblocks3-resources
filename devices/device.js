@@ -12,6 +12,7 @@ module.exports = [
     'unoMaker_arduinoUno',
     'UnoMax_arduinoUno',
     'kidsUno_arduinoUno',
+    'easyplug_arduinoUno',
     
     //Esp32 for arduino
     'ESP32S3mini_arduinoEsp32S3',
@@ -27,6 +28,7 @@ module.exports = [
     'makeyMakey',
     
    // robot
+   'keyesRobot_arduinoUno',
    'AIbot_arduinoEsp32S3',
    'TankRobotv2_arduinoUno',
    'FrogRobot_arduinoUno',
@@ -47,6 +49,7 @@ module.exports = [
     'Smarthome_arduinoUno',
     'Inventor_arduinoUno',
     'Codingbox_arduinoUno',
+    'esp32arm_arduinoEsp32',
     'codingbox_arduinoEsp32',
     'Inventor_arduinoEsp32',
     'Beetlebot_arduinoEsp32',

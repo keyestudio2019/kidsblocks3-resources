@@ -253,10 +253,13 @@ Blockly.Blocks.robot_forward = {
                     
             ],
             args1: [
-            
                 {
                     type: 'input_value',
-                    name: 'SPEED'
+                    name: 'SPEED_LEFT'
+                },
+                {
+                    type: 'input_value',
+                    name: 'SPEED_RIGHT'
                 }
             ],
             colour: color5,
@@ -279,10 +282,13 @@ Blockly.Blocks.robot_forward = {
                         
                 ],
                 args1: [
-                
                     {
                         type: 'input_value',
-                        name: 'SPEED'
+                        name: 'SPEED_LEFT'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'SPEED_RIGHT'
                     }
                 ],
                 colour: color5,
@@ -306,10 +312,13 @@ Blockly.Blocks.robot_forward = {
                         
                 ],
                 args1: [
-                
                     {
                         type: 'input_value',
-                        name: 'SPEED'
+                        name: 'SPEED_LEFT'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'SPEED_RIGHT'
                     }
                 ],
                 colour: color5,
@@ -333,10 +342,13 @@ Blockly.Blocks.robot_forward = {
                         
                 ],
                 args1: [
-                
                     {
                         type: 'input_value',
-                        name: 'SPEED'
+                        name: 'SPEED_LEFT'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'SPEED_RIGHT'
                     }
                 ],
                 colour: color5,

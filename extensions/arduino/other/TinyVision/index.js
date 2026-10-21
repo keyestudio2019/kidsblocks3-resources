@@ -5,8 +5,8 @@ const tinyvision = formatMessage => ({
     }),
     extensionId: 'tinyvision',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266', 'arduinoEsp32S3'],
-    author: 'KidsBlock User',
+    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266',],
+    author: 'keyestudio',
     iconURL: `asset/tinyvision.png`,
     description: formatMessage({
         id: 'tinyvision.description',
@@ -19,8 +19,8 @@ const tinyvision = formatMessage => ({
     msg: 'msg.js',
     library: 'lib',
     official: true,
-    tags: ['sensor', 'ai'],
-    helpLink: 'https://wiki.openblock.cc'
+    tags: ['ai'],
+    helpLink: 'https://www.keyestudio.com'
 });
 
 module.exports = tinyvision;

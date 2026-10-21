@@ -10,12 +10,33 @@
 function addBlocks(Blockly) {
     const color1 = '#4CAF50';  // 用于语句块（绿色）
     const color2 = '#4C97FF';  // 用于值块（蓝色）
-    
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+
+    // 部分 OpenBlock/KidsBlock 版本未注入 Blockly.Msg.NUMBER / STRING。
+    // FieldDropdown 不能接受 undefined 标签，否则会在内部访问 .alt 时崩溃。
+    const numberLabel = (Blockly.Msg && Blockly.Msg.NUMBER) || 'Number';
+    const stringLabel = (Blockly.Msg && Blockly.Msg.STRING) || 'String';
+
+    // 优先从主 Arduino 扩展取得引脚列表；主工作区尚未就绪时使用默认引脚，
+    // 使本扩展仍可正常加载。
+    let digitalPins = [
+        ['19', '19'],
+        ['20', '20']
+    ];
+    try {
+        const workspace = Blockly.getMainWorkspace && Blockly.getMainWorkspace();
+        const flyout = workspace && workspace.getFlyout && workspace.getFlyout();
+        const flyoutItems = flyout && flyout.getFlyoutItems && flyout.getFlyoutItems();
+        const pinBlock = flyoutItems && flyoutItems.find(block =>
+            block.type === 'arduino_pin_setDigitalOutput'
+        );
+        const pinField = pinBlock && pinBlock.getField && pinBlock.getField('PIN');
+        const pinOptions = pinField && pinField.getOptions && pinField.getOptions();
+        if (Array.isArray(pinOptions) && pinOptions.length > 0) {
+            digitalPins = pinOptions;
+        }
+    } catch (error) {
+        // 保持默认引脚；不因主扩展加载顺序而阻止本扩展加载。
+    }
 
     // ===============================  
     // 注册 MCP 超声波传感器服务
@@ -44,8 +65,8 @@ function addBlocks(Blockly) {
                         type: 'field_dropdown',
                         name: 'PARAM_TYPE',
                         options: [
-                            [Blockly.Msg.NUMBER, 'Number'],
-                            [Blockly.Msg.STRING, 'String']
+                            [numberLabel, 'Number'],
+                            [stringLabel, 'String']
                         ]
                     }
                 ],

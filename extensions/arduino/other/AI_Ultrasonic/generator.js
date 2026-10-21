@@ -121,7 +121,11 @@ function addGenerator(Blockly) {
             digitalWrite(trig, HIGH);
             delayMicroseconds(10);
             digitalWrite(trig, LOW);
-            long duration = pulseIn(echo, HIGH);
+            const unsigned long timeoutUs = 30000UL;
+            long duration = pulseIn(echo, HIGH, timeoutUs);
+            if (duration == 0) {
+                return 0.0f;
+            }
             return (duration * ${speedOfSound} / 2);
         })(${trigPin}, ${echoPin})`;
 

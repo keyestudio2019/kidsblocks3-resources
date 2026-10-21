@@ -145,7 +145,7 @@ function addBlocks(Blockly) {
         init: function () {
             this.jsonInit({
                 message0: '%1',
-                message1: Blockly.Msg.LED_SET_LED_STATE,
+                message1: Blockly.Msg.LED_SET_DEVICE_STATE,
                 args0: [
                     {
                         type: 'field_image',
@@ -156,6 +156,17 @@ function addBlocks(Blockly) {
                         
                 ],
                 args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'device',
+                        options: [
+                            [Blockly.Msg.DEVICE_LED, 'led'],
+                            [Blockly.Msg.DEVICE_ACTIVE_BUZZER, 'active_buzzer'],
+                            [Blockly.Msg.DEVICE_RELAY, 'relay'],
+                            [Blockly.Msg.DEVICE_VIBRATION_MOTOR, 'vibration_motor'],
+                            [Blockly.Msg.DEVICE_LASER_MODULE, 'laser_module']
+                        ]
+                    },
                     {
                         type: 'field_dropdown',
                         name: 'pin',

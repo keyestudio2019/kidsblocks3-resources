@@ -5,11 +5,9 @@ function addGenerator (Blockly) {
     Blockly.Arduino.tinyvision_init = function (block) {
         const rx = block.getFieldValue('RX');
         const tx = block.getFieldValue('TX');
-        const baud = block.getFieldValue('BAUD');
 
         Blockly.Arduino.includes_.tinyvision_init = `#include "AiCam.h"`;
         Blockly.Arduino.definitions_[`tinyvision_instance`] = `AiCam aiCam(${rx}, ${tx});`;
-        Blockly.Arduino.setups_[`tinyvision_serial_begin`] = `Serial.begin(${baud});`;
         Blockly.Arduino.setups_[`tinyvision_setup`] = `aiCam.begin();`;
 
         return '';
@@ -54,7 +52,14 @@ function addGenerator (Blockly) {
         return [`aiCam.getQrCode()`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
-    // 9. 获取卡片识别原始结果字符串
+    // 9. 判断二维码识别结果是否为预设文本
+    Blockly.Arduino.tinyvision_is_qrcode_content = function (block) {
+        const qrcodeContent = block.getFieldValue('QRCODE_CONTENT');
+        // 仅比较 aiCam.getQrCode() 返回的二维码文本，不调用颜色识别接口。
+        return [`(String(aiCam.getQrCode()) == "${qrcodeContent}")`, Blockly.Arduino.ORDER_ATOMIC];
+    };
+
+    // 10. 获取卡片识别原始结果字符串
     Blockly.Arduino.tinyvision_get_card = function (block) {
         return [`aiCam.getCard()`, Blockly.Arduino.ORDER_ATOMIC];
     };
@@ -65,6 +70,13 @@ function addGenerator (Blockly) {
         // aiCam.getCard() 返回大写卡片字符串，如 "STRAIGHT"、"UTURN"、"LEFT"、"RIGHT"、"PARKING"
         return [`(String(aiCam.getCard()) == "${cardVal}")`, Blockly.Arduino.ORDER_ATOMIC];
     };
+
+    // 11. 获取线条偏移值，角度值，状态值
+    Blockly.Arduino.tinyvision_get_line_value = function (block) {
+        const value = block.getFieldValue('VALUE');
+        return [`aiCam.getLine${value}()`, Blockly.Arduino.ORDER_ATOMIC];
+    };
+    
 
     return Blockly;
 }

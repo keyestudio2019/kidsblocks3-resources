@@ -26,15 +26,6 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'TX',
                         options: digitalPins
-                    },
-                    {
-                        type: 'field_dropdown',
-                        name: 'BAUD',
-                        options: [
-                            ['9600',   '9600'],
-                            ['57600',  '57600'],
-                            ['115200', '115200']
-                        ]
                     }
                 ],
                 colour: color,
@@ -57,7 +48,8 @@ function addBlocks (Blockly) {
                             [Blockly.Msg.TINYVISION_MODE_FACE, 'face'],
                             [Blockly.Msg.TINYVISION_MODE_COLOR, 'color'],
                             [Blockly.Msg.TINYVISION_MODE_QR, 'qr'],
-                            [Blockly.Msg.TINYVISION_MODE_CARD, 'card']
+                            [Blockly.Msg.TINYVISION_MODE_CARD, 'card'],
+                            [Blockly.Msg.TINYVISION_MODE_LINE, 'line']
                         ]
                     }
                 ],
@@ -162,7 +154,32 @@ function addBlocks (Blockly) {
         }
     };
 
-    // 9. 卡片识别结果 —— 固定 5 种卡片
+    // 9. 判断二维码识别结果是否为预设文本
+    Blockly.Blocks.tinyvision_is_qrcode_content = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.TINYVISION_IS_QRCODE_CONTENT,
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'QRCODE_CONTENT',
+                        options: [
+                            [Blockly.Msg.TINYVISION_QRCODE_CONTENT_RED,    'red'],
+                            [Blockly.Msg.TINYVISION_QRCODE_CONTENT_BLUE,   'blue'],
+                            [Blockly.Msg.TINYVISION_QRCODE_CONTENT_GREEN,  'green'],
+                            [Blockly.Msg.TINYVISION_QRCODE_CONTENT_YELLOW, 'yellow'],
+                            [Blockly.Msg.TINYVISION_QRCODE_CONTENT_BLACK,  'black'],
+                            [Blockly.Msg.TINYVISION_QRCODE_CONTENT_WHITE,  'white']
+                        ]
+                    }
+                ],
+                colour: color,
+                secondaryColour: secondaryColour,
+                extensions: ['output_boolean']
+            });
+        }
+    };
+    // 10. 卡片识别结果 —— 固定 5 种卡片
     Blockly.Blocks.tinyvision_get_card = {
         init: function () {
             this.jsonInit({
@@ -195,6 +212,29 @@ function addBlocks (Blockly) {
                 colour: color,
                 secondaryColour: secondaryColour,
                 extensions: ['output_boolean']
+            });
+        }
+    };
+
+        // 11. 获取线条偏移值，角度值，状态值
+    Blockly.Blocks.tinyvision_get_line_value = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.TINYVISION_GET_LINE_VALUE,
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'VALUE',
+                        options: [
+                            ['Offset', 'Offset'],
+                            ['Angle', 'Angle'],
+                            ['Valid', 'Valid']
+                        ]
+                    }
+                ],
+                colour: color,
+                secondaryColour: secondaryColour,
+                extensions: ['output_number']
             });
         }
     };

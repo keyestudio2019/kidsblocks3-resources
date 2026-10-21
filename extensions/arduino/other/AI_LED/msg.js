@@ -181,7 +181,107 @@ function addMsg(Blockly) {
         NUMBER: '数值'
     });
 
+        const deviceMessages = {
+        en: {
+            LED_SET_DEVICE_STATE: 'Set %1 pin %2 output %3',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: 'Active buzzer',
+            DEVICE_RELAY: 'Relay',
+            DEVICE_VIBRATION_MOTOR: 'Vibration motor',
+            DEVICE_LASER_MODULE: 'Laser module'
+        },
+        de: {
+            LED_SET_DEVICE_STATE: 'Setze %1 an Pin %2 auf %3',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: 'Aktiver Summer',
+            DEVICE_RELAY: 'Relais',
+            DEVICE_VIBRATION_MOTOR: 'Vibrationsmotor',
+            DEVICE_LASER_MODULE: 'Lasermodul'
+        },
+        es: {
+            LED_SET_DEVICE_STATE: 'Establecer %1 en el pin %2 como %3',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: 'Zumbador activo',
+            DEVICE_RELAY: 'Relé',
+            DEVICE_VIBRATION_MOTOR: 'Motor de vibración',
+            DEVICE_LASER_MODULE: 'Módulo láser'
+        },
+        fr: {
+            LED_SET_DEVICE_STATE: 'Définir %1 sur la broche %2 à %3',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: 'Buzzer actif',
+            DEVICE_RELAY: 'Relais',
+            DEVICE_VIBRATION_MOTOR: 'Moteur de vibration',
+            DEVICE_LASER_MODULE: 'Module laser'
+        },
+        it: {
+            LED_SET_DEVICE_STATE: 'Imposta %1 sul pin %2 su %3',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: 'Cicalino attivo',
+            DEVICE_RELAY: 'Relè',
+            DEVICE_VIBRATION_MOTOR: 'Motore a vibrazione',
+            DEVICE_LASER_MODULE: 'Modulo laser'
+        },
+        ja: {
+            LED_SET_DEVICE_STATE: '%1 をピン %2 の出力 %3 に設定',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: 'アクティブブザー',
+            DEVICE_RELAY: 'リレー',
+            DEVICE_VIBRATION_MOTOR: '振動モーター',
+            DEVICE_LASER_MODULE: 'レーザーモジュール'
+        },
+        ko: {
+            LED_SET_DEVICE_STATE: '%1 핀 %2 출력 %3 설정',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: '능동 부저',
+            DEVICE_RELAY: '릴레이',
+            DEVICE_VIBRATION_MOTOR: '진동 모터',
+            DEVICE_LASER_MODULE: '레이저 모듈'
+        },
+        pl: {
+            LED_SET_DEVICE_STATE: 'Ustaw %1 na pinie %2 na %3',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: 'Brzęczyk aktywny',
+            DEVICE_RELAY: 'Przekaźnik',
+            DEVICE_VIBRATION_MOTOR: 'Silnik wibracyjny',
+            DEVICE_LASER_MODULE: 'Moduł laserowy'
+        },
+        pt: {
+            LED_SET_DEVICE_STATE: 'Definir %1 no pino %2 como %3',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: 'Buzzer ativo',
+            DEVICE_RELAY: 'Relé',
+            DEVICE_VIBRATION_MOTOR: 'Motor vibratório',
+            DEVICE_LASER_MODULE: 'Módulo laser'
+        },
+        ru: {
+            LED_SET_DEVICE_STATE: 'Установить %1 на пине %2 в состояние %3',
+            DEVICE_LED: 'Светодиод',
+            DEVICE_ACTIVE_BUZZER: 'Активный зуммер',
+            DEVICE_RELAY: 'Реле',
+            DEVICE_VIBRATION_MOTOR: 'Вибромотор',
+            DEVICE_LASER_MODULE: 'Лазерный модуль'
+        },
+        'zh-tw': {
+            LED_SET_DEVICE_STATE: '設定%1 引腳%2 輸出%3',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: '有源蜂鳴器',
+            DEVICE_RELAY: '繼電器',
+            DEVICE_VIBRATION_MOTOR: '振動馬達',
+            DEVICE_LASER_MODULE: '雷射模組'
+        },
+        'zh-cn': {
+            LED_SET_DEVICE_STATE: '设置%1 引脚%2 输出%3',
+            DEVICE_LED: 'LED',
+            DEVICE_ACTIVE_BUZZER: '有源蜂鸣器',
+            DEVICE_RELAY: '继电器',
+            DEVICE_VIBRATION_MOTOR: '振动马达',
+            DEVICE_LASER_MODULE: '激光模块'
+        }
+    };
+    Object.keys(deviceMessages).forEach(locale => {
+        Object.assign(Blockly.ScratchMsgs.locales[locale], deviceMessages[locale]);
+    });
     return Blockly;
 }
-
 exports = addMsg;
