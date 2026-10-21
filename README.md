@@ -1,3 +1,8 @@
+V1.8.0:
+
+Add Easyplug development board<br>
+Add ESP32 Robot Arm<br>
+Add TDR STEAM Shield.
 
 V1.7.9:
 
